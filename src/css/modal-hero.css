@@ -31,6 +31,10 @@
     line-height: 1.14;
     color: #FCF1E0;
 }
+
+.modal-hero-close-icon{
+    stroke: var(--accent-color);
+}
 .is-hidden{
     opacity: 0;
 }
@@ -47,8 +51,9 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;    
-    color: var(--accent-color);
+    
 }
+
 
 .modal-feedback {
     position: absolute;
@@ -78,6 +83,10 @@
     border-radius: 50%;
     cursor: pointer;
     color: var(--accent-color);
+}
+
+.modal-feedback-close-icon{
+    stroke: var(--accent-color);
 }
 
 .modal-feedback-title {
