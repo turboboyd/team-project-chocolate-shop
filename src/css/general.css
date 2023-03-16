@@ -1,79 +1,96 @@
 /* ЗАГАЛЬНІ НАЛАШТУВАННЯ */
 .container {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .section {
-    padding-top: 36px;
-    padding-bottom: 36px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--main-font-color);
-    margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--main-font-color);
+  margin-bottom: 32px;
 }
 
 .title-brand-color {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .title-white {
-    color: var(--light-font-color);
+  color: var(--light-font-color);
 }
 
 .title-modal {
-    letter-spacing: -0.02em;
-    color: var(--light-modal-color);
+  letter-spacing: -0.02em;
+  color: var(--light-modal-color);
+}
+
+.button {
+  border-radius: 100px;
+  font-weight: 600;
+  padding: 12px 28px;
+  height: 41px;
+  font-size: 14px;
+  line-height: 1.214;
+  background-color: var(--accent-color);
+  color: var(--light-font-color);
+}
+.button:is(:hover, :focus) {
+  background-color: var(--light-modal-color);
+  color: var(--accent-color);
 }
 
 /* Налаштування ТІЛЬКИ для мобільної версії і менше */
 @media screen and (width: 767px) {
-    .title {
-        font-size: 20px;
-        line-height: 1.2;
-    }
+  .title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
-/* Налаштування для ширини екрану з 375px до 767 */
+/* Налаштування для ширини екрану MOBILE з 375px до 767 */
 @media screen and (min-width: 375px) {
-    .container {
-        width: 365px;
-    }
-    
+  .container {
+    width: 365px;
+  }
 }
 
-/* Налаштування для ширини екрану з 768px до 1199 */
+/* Налаштування для ширини екрану TABLET з 768px до 1199 */
 @media screen and (min-width: 768px) {
-    .container {
-        width: 734px;
-    }
+  .container {
+    width: 734px;
+  }
 
-    .section {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .title{
-        margin-bottom: 50px;
-    }
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .title {
+    margin-bottom: 50px;
+  }
+  .button {
+    padding: 14px 40px;
+    height: 45px;
+  }
 }
 
-/* Налаштування для ширини екрану від 1200 */
+/* Налаштування для ширини екрану DESKTOP від 1200 */
 @media screen and (min-width: 1200px) {
-    .container {
-        width: 1166px;
-    }
+  .container {
+    width: 1166px;
+  }
 
-    .section {
-        padding-top: 64px;
-        padding-bottom: 64px;
-    }
-    
+  .section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 }
