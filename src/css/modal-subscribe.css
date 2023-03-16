@@ -1,0 +1,14 @@
+.modal-subscribe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 311px;
+    height: 350px;
+    background: #FAFAFA;
+    border-radius: 15px;  
+    background-image: url(../img/modal-hero/bar-chocolate-mob-1.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 0;
+}
+
