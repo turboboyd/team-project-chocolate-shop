@@ -1,0 +1,48 @@
+.section-review {
+ text-align: center;
+}
+
+.review-title {
+}
+.review-list {
+    margin-bottom: 32px;
+}
+.review-item {
+}
+.review-subtitle {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--main-font-color);
+    margin-bottom: 24px;
+}
+.review-text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--main-font-color-transparent);
+}
+.review-btn {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--main-font-color);
+}
+.review-btn:hover,
+.review-btn:focus {
+   background-color: var(--accent-color);
+   color: var(--light-font-color);
+}
+
+@media screen and (min-width: 768px){
+    .review-btn{
+        height: 50px;
+        font-size: 18px;
+        line-height: 1.22;
+    } 
+    .review-list {
+        margin-bottom: 50px;
+    } 
+}
