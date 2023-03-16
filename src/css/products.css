@@ -1,16 +1,9 @@
-
-
-.products-grid {
-    width: 100%;
-}
-
 .products-card {
     background: #FFFFFF;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     padding: 32px 52px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .products-card img {
@@ -19,6 +12,7 @@
 
 .products-name {
     font-size: 18px;
+    font-weight: 600;
     line-height: 1.33;
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -35,8 +29,8 @@
 }
 
 .products-btn {
-    width: 94px;
-    height: 33px;
+    min-width: 94px;
+    min-height: 33px;
     background: #FAFAFA;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
@@ -46,77 +40,17 @@
     color: #111111;
 }
 
-/* Слайдер */
-.slick-slider {}
-
-/* Слайдер запущен */
-.slick-slider.slick-initialized {}
-
-/* Слайдер с точками */
-.slick-slider.slick-dotted {}
-
-/* Ограничивающая оболочка */
-.slick-list {
+.products-grid .slick-list {
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
-/* Лента слайдов */
-.slick-track {
+.products-grid .slick-track {
     display: flex;
     gap: 20px;
 }
 
-/* Слайд */
-.slick-slide {}
-
-/* Слайд активный (показывается) */
-.slick-slide.slick-active {}
-
-/* Слайд основной */
-.slick-slide.slick-current {}
-
-/* Слайд по центру */
-.slick-slide.slick-center {}
-
-/* Клонированный слайд */
-.slick-slide.slick-cloned {}
-
-/* Стрелка */
-.slick-arrow {}
-
-/* Стрелка влево */
-.slick-arrow.slick-prev {}
-
-/* Стрелка вправо */
-.slick-arrow.slick-next {}
-
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {}
-
-/* Точки (булиты) */
-.slick-dots {}
-
-.slick-dots li {}
-
-/* Активная точка */
-.slick-dots li.slick-active {}
-
-/* Элемент точки */
-.slick-dots li button {}
-
-
-
-.slick-list {
-    overflow: hidden;
-}
-
-/* Лента слайдов */
-.slick-track {
-    display: flex;
-}
-
-/* Точки (булиты) */
-.slick-dots {
+.products-grid .slick-dots {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -125,21 +59,18 @@
 
 }
 
-.slick-dots li {
+.products-grid .slick-dots li {
     list-style: none;
-    /* margin: 0 13px; */
 }
 
-/* Активная точка */
-.slick-dots li.slick-active button {
+.products-grid .slick-dots li.slick-active button {
     width: 28px;
     height: 13px;
     background: #FD9222;
     border-radius: 40%;
 }
 
-/* Элемент точки */
-.slick-dots li button {
+.products-grid .slick-dots li button {
     width: 13px;
     height: 13px;
     background: rgba(17, 17, 17, 0.1);
@@ -148,64 +79,41 @@
     font-size: 0;
     cursor: pointer;
 }
+/* test */
+/* .products-wrapper{
+    position: relative;
+    width: 100vh;
+    height: 409px;
+}
 
 
-
-
-/* @media screen and (min-width: 375px) {
-     {
-        width: 365px;
-        margin: 0 auto;
-    }
-
-
-
+@media screen and (max-width: 11199px) {
     .products-grid {
-        width: 100%;
+            position: absolute;
     }
-
-    .products-card {
-        width: 335px;
-        min-height: 364px;
-
-    } 
-
 } */
+ 
 
 @media screen and (min-width: 375px) {
-    .products-grid {
-        width: 100%;
-    }
-
     .products-card {
         width: 335px;
-        min-height: 364px;
     }
 
 }
 
-
 @media screen and (min-width: 768px) {
-    .products-title {
-        font-size: 24px;
-        line-height: 1.17;
-        margin-bottom: 50px;
-    }
-
-    .products-grid {}
-
     .products-card {
         width: 270px;
-        height: 364px;
         padding: 32px 20px;
+    }
+    .products-grid .slick-list {
         margin-bottom: 32px;
     }
 
-    .slick-track {
-        gap: 18px 18px;
+    .products-grid .slick-track {
+        gap: 18px;
     }
 }
-
 
 @media screen and (min-width: 1200px) {
     .products-grid {
@@ -213,12 +121,6 @@
         flex-wrap: wrap;
         gap: 18px 18px;
     }
-
-    .products-card {
-        margin: 0;
-    }
-
-    /* .slick-track{
-        flex-wrap: wrap;
-    } */
 }
+
+
