@@ -1,20 +1,15 @@
 .advantages {
-<<<<<<< Updated upstream
   padding-top: 36px;
   padding-bottom: 36px;
   background: #1e1823;
-=======
   padding-top: 96px;
   padding-bottom: 96px;
->>>>>>> Stashed changes
 }
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-<<<<<<< Updated upstream
   gap: 24px;
 }
-
 .advantages-list .advantages-head {
   font-weight: 600;
   font-size: 18px;
@@ -28,7 +23,6 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
-=======
   gap: 72px;
 }
 .advantages-list .advantages-head {
@@ -36,12 +30,10 @@
   font-size: 36px;
   line-height: 1.1;
   text-align: left;
->>>>>>> Stashed changes
 }
 .advantages-title-hide {
   display: none;
 }
-<<<<<<< Updated upstream
 .advantages-icon {
   margin-bottom: 30px;
   height: 62px;
@@ -72,5 +64,3 @@
     width: calc((100% - 88px) / 4);
   }
 }
-=======
->>>>>>> Stashed changes
