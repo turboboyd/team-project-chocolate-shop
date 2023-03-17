@@ -25,12 +25,6 @@
   color: rgba(255, 255, 255, 0.7);
   gap: 72px;
 }
-.advantages-list .advantages-head {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  text-align: left;
-}
 .advantages-title-hide {
   display: none;
 }
