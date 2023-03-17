@@ -8,4 +8,6 @@
   --light-modal-color: #FCF1E0;
   --modal-btn-bgr-color: #FAFAFA;
   --main-font-color-transparent: rgba(17, 17, 17, 0.7);
+  --border-transparent-color: rgba(17, 17, 17, 0.1);
+  --shadow-color: rgba(215, 228, 249, 0.25);
 }
