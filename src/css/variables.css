@@ -6,4 +6,6 @@
   --main-font-color: #111;
   --light-font-color: #fff;
   --light-modal-color: #FCF1E0;
+  --modal-btn-bgr-color: #FAFAFA;
+  --main-font-color-transparent: rgba(17, 17, 17, 0.7);
 }
