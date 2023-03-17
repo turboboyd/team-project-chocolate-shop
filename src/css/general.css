@@ -4,6 +4,7 @@ body{
     font-size: 14px;
     line-height: 1.29;
     color: var(--main-font-color);
+    background-color: var(--modal-btn-bgr-color);
 }
 
 .container {
