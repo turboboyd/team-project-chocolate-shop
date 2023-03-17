@@ -54,6 +54,9 @@
     
 }
 
+.modal-hero-close:is(:hover, :focus){
+    background-color: var(--accent-color);
+}
 
 .modal-feedback {
     position: absolute;
@@ -115,7 +118,7 @@
     .modal-hero{
         width: 516px;
         height: 414px;
-        background-image: url(../img/modal-hero/modal-chocolate-tabl-desk-1.png);
+        background-image: url(../img/modal-hero/modal-chocolate-tab-desk-1.png);
     }
     .modal-hero-title{
         margin-top: 90px;
@@ -140,7 +143,7 @@
     .modal-feedback {
         width: 516px;
         height: 414px;
-        background-image: url(../img/modal-hero/modal-chocolate-tabl-desk-1.png);
+        background-image: url(../img/modal-hero/modal-chocolate-tab-desk-1.png);
     }
     
     .modal-feedback-close {
