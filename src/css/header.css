@@ -1,7 +1,10 @@
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 99;
   padding-top: 20px;
   padding-bottom: 14px;
+  background-color: var(--main-bgr-color);
 }
 
 .header-wrap {
@@ -11,6 +14,8 @@
 }
 
 .header-logo-link {
+  padding-top: 24px;
+  padding-bottom: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,7 +130,7 @@
 
 .header-menu-item {
   position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition);
 }
 
 .header-menu-item:is(:hover, :focus) {
@@ -141,7 +146,7 @@
   transform: translateY(8px);
   background: var(--accent-color);
   content: '';
-  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width var(--transition);
 }
 
 .header-menu-item:is(:hover, :focus):after {
@@ -155,7 +160,7 @@
 }
 
 .header-menu-soc-icon {
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke var(--transition);
   stroke: var(--light-font-color);
   fill: transparent;
 }
@@ -194,7 +199,8 @@
 
 @media screen and (min-width: 1200px) {
   .header {
-    padding-bottom: 32px;
+    position: relative;
+    padding: 0;
   }
 
   /* .header-wrap {
@@ -249,29 +255,37 @@
     line-height: calc(16 / 14);
   }
 
-  .header-nav-item {
+  .header-nav-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 32px;
     position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition);
   }
 
-  .header-nav-item:is(:hover, :focus) {
+  .header-nav-link:is(:hover, :focus) {
     color: var(--accent-color);
   }
 
-  .header-nav-item::after {
+  .header-nav-link::after {
     position: absolute;
     top: 100%;
     left: 0;
     width: 0;
     height: 1px;
-    transform: translateY(8px);
+    transform: translateY(-24px);
     background: var(--accent-color);
     content: '';
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: width var(--transition);
   }
 
-  .header-nav-item:is(:hover, :focus):after {
-    width: 24px;
+  .header-nav-link:is(:hover, :focus):after {
+    width: calc(24 * 100% / 43);
+  }
+  .header-soc-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 32px;
   }
   .header-soc-icon {
     display: block;
@@ -280,12 +294,12 @@
   }
 
   .header-soc-icon {
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke var(--transition);
     stroke: var(--main-font-color);
     fill: transparent;
   }
 
-  .header-soc-item:is(:hover, :focus) .header-soc-icon {
+  .header-soc-link:is(:hover, :focus) .header-soc-icon {
     stroke: var(--accent-color);
   }
 }
