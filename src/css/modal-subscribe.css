@@ -50,10 +50,12 @@
 }
 .modal-subscribe-but{
     width: 100px;
-    border-radius: 100px;
-    font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    background: var(--accent-color);
-    color: #FAFAFA;
+    border-radius: 100px;
+    font-weight: 600;
+    padding: 12px 28px;
+    height: 41px;
+    background-color: var(--accent-color);
+    color: var(--light-font-color);
 }
