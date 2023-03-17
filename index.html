@@ -16,8 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Roboto&display=swap" rel="stylesheet">
     
-    <script type="module" crossorigin src="/team-project-chocolate-shop/assets/index-20ad825c.js"></script>
-    <link rel="stylesheet" href="/team-project-chocolate-shop/assets/index-6bd29c87.css">
+    <script type="module" crossorigin src="/team-project-chocolate-shop/assets/index-48a7c96c.js"></script>
+    <link rel="stylesheet" href="/team-project-chocolate-shop/assets/index-4c8eedbe.css">
   </head>
   <body>
     <header class="header">
@@ -492,7 +492,47 @@
   </div>
 </section>
 
-      11
+      <div class="modal modal-leave-review" data-modal="modal-review">
+    <div class="btn-wrap">
+        <button type="button" class="btn-close-leave-review  js-modal-close">
+            <svg class="icon-close-leave-review js-modal-close" width="24" height="24">
+                <use href="./symbol-defs.svg#icon-btn-close-leave-review"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="container-modal-leave-review">
+        <h2 class="title-modal-leave-review">leave a review <br class="line-break-title-modal-leave-review"> about <span
+                class="accent-title-modal-leave-review">our
+                chocolate</span></h2>
+        <form class="form-modal-leave-review">
+            <div class="form-field-modal-leave-review">
+                <input type="text" class="input-modal-leave-review text-input-modal-leave-review" name="name-review"
+                    placeholder="Name" required>
+            </div>
+            <div class=" form-field-modal-leave-review">
+                <input type="email" class="input-modal-leave-review text-input-modal-leave-review" name="email-review"
+                    placeholder="Enter your email" required>
+            </div>
+
+
+            <div class="form-field-modal-leave-review">
+                <div class="country-container"></div>
+                <input type="tel" class="input-modal-leave-review phone-input text-input-modal-leave-review"
+                    name="tel-review" placeholder="Phone number" required>
+            </div>
+
+
+
+            <div class="form-field-modal-leave-review message-form-field-modal-leave-review">
+                <textarea class="message-modal-leave-review text-input-modal-leave-review" name="message-review"
+                    placeholder="Enter text" required></textarea>
+            </div>
+            <button type="submit" class="btn-modal-review">Send</button>
+        </form>
+    </div>
+</div>
+
+<div class="overlay js-overlay-modal"></div>
       12
       <div class="backdrop">
   <div class="modal-subscribe">
@@ -509,15 +549,13 @@
     <main>
 
     14
-        <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.6.4.min.js"
-    ></script>
+
+
+    <script type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     
-    
-
 
   </body>
 </html>
