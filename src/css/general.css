@@ -49,7 +49,10 @@ body{
   line-height: 1.214;
   background-color: var(--accent-color);
   color: var(--light-font-color);
+  border: none;
+  transition: background-color var(--transition) ;
 }
+
 .button:is(:hover, :focus) {
   background-color: var(--light-modal-color);
   color: var(--accent-color);

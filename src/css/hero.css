@@ -26,12 +26,6 @@
   padding-bottom: 72px;
 }
 
-.hero-container {
-  max-width: 375px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
 .hero-title {
   position: absolute;
   width: 1px;
@@ -65,21 +59,17 @@
   align-items: center;
   margin-bottom: 32px;
 }
-.button {
-  border: none;
-  transition: background-color var(--transition) ;
-}
 
 
-.made {
+.hero-btn {
   border: 1px solid var(--light-font-color) ;
   background-color: transparent;
   color: var(--light-font-color);
   transition:  var(--transition);
 }
 
-.made:hover,
-.made:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
   background-color: transparent;
@@ -101,6 +91,7 @@
   gap: 14px;
   cursor: pointer;
   align-items:center;
+  max-width: 110px;
 }
 
 .hero-scroll-icon {
@@ -133,11 +124,7 @@ a:focus .hero-scroll-text {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .hero-container {
-    max-width: 744px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
+ 
 
   .hero-btn-flex {
     display: flex;
@@ -178,11 +165,7 @@ a:focus .hero-scroll-text {
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
-  .hero-container {
-    max-width: 1200px;
-    padding: 0 32px;
-    margin: 0 auto;
-  }
+ 
 
   .hero-box {
     padding: 381px 40px 40px 40px;
