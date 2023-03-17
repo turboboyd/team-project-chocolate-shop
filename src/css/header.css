@@ -18,11 +18,9 @@
 }
 
 .header-logo-text {
-  font-family: 'Montserrat';
   font-weight: 700;
-  font-size: 14px;
-  line-height: calc(18 / 14);
   letter-spacing: -0.03em;
+  line-height: calc(18 / 14);
 }
 
 .header-logo-text > span {
@@ -44,6 +42,7 @@
   border: none;
   background-color: transparent;
 }
+
 .header-menu-open-icon {
   width: 28px;
   height: 28px;
@@ -58,41 +57,44 @@
 }
 
 .header-menu {
-  background-color: var(--footer-bgr-color);
+  background-color: var(--advantages-bgr-color);
   z-index: 100;
   position: fixed;
   top: 0;
   right: 0;
-  max-width: 220px;
+  min-width: 220px;
   height: 100%;
   padding: 20px;
 
   transform: translateX(0);
+  background-color: var(--advantages-bgr-color);
 
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-menu-wrap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
+
 .header-menu-close-btn {
   display: block;
+  margin-bottom: 88px;
+  margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
-  margin-bottom: 88px;
-  margin-left: auto;
 }
 
 .header-menu-close-icon {
   width: 28px;
   height: 28px;
-  stroke: var(--light-font-color);
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  stroke: var(--light-font-color);
 }
 
 .header-menu-close-btn:is(:hover, :focus) .header-menu-close-icon {
@@ -103,39 +105,42 @@
 
 .header-menu-list {
   display: flex;
-  max-width: 124px;
-  margin-left: 30px;
-  justify-content: center;
   flex-direction: column;
   gap: 24px;
-  font-family: 'Montserrat';
 
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
 
   letter-spacing: -0.02em;
 
   color: var(--light-font-color);
+  font-size: 14px;
+
+  font-weight: 500;
+
+  letter-spacing: -0.02em;
+  line-height: calc(16 / 14);
+  gap: 24px;
 }
+
 .header-menu-item {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-menu-item:is(:hover, :focus) {
   color: var(--accent-color);
 }
 
 .header-menu-item::after {
-  content: '';
-
   position: absolute;
-  background: var(--accent-color);
-  width: 0;
-  height: 1px;
   top: 100%;
   left: 0;
+  width: 0;
+  height: 1px;
   transform: translateY(8px);
+  background: var(--accent-color);
+  content: '';
   transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -150,12 +155,13 @@
 }
 
 .header-menu-soc-icon {
-  fill: var(--light-font-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  stroke: var(--light-font-color);
+  fill: transparent;
 }
 
 .header-menu-soc-item:is(:hover, :focus) .header-menu-soc-icon {
-  fill: var(--accent-color);
+  stroke: var(--accent-color);
 }
 
 /* ------TABLET------ */
@@ -167,14 +173,15 @@
   }
 
   .header-menu-open-icon {
+    display: block;
     width: 32px;
     height: 32px;
   }
 
   .header-menu {
-    max-width: 290px;
-    padding-left: 32px;
+    min-width: 290px;
     padding-right: 32px;
+    padding-left: 32px;
   }
 
   .header-menu-soc-icon {
@@ -190,12 +197,13 @@
     padding-bottom: 32px;
   }
 
-  .header-wrap {
+  /* .header-wrap {
     justify-content: unset;
-  }
+  } */
   .header-logo-link {
     margin-right: 188px;
   }
+
   .header-logo-text {
     font-size: 18px;
     line-height: calc(20 / 18);
@@ -224,39 +232,41 @@
     display: none;
   }
 
-  .header-nav {
-  }
   .header-nav-list {
-    font-family: 'Montserrat';
+    margin-right: 137px;
 
     font-weight: 500;
-    font-size: 14px;
+
     line-height: calc(16 / 14);
 
     letter-spacing: -0.02em;
 
     color: var(--main-font-color);
+    font-size: 14px;
+    font-weight: 500;
 
-    margin-right: 137px;
+    letter-spacing: -0.02em;
+    line-height: calc(16 / 14);
   }
+
   .header-nav-item {
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .header-nav-item:is(:hover, :focus) {
     color: var(--accent-color);
   }
 
   .header-nav-item::after {
-    content: '';
-
     position: absolute;
-    background: var(--accent-color);
-    width: 0;
-    height: 1px;
     top: 100%;
     left: 0;
+    width: 0;
+    height: 1px;
     transform: translateY(8px);
+    background: var(--accent-color);
+    content: '';
     transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -264,11 +274,18 @@
     width: 24px;
   }
   .header-soc-icon {
-    fill: var(--main-font-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .header-soc-icon {
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    stroke: var(--main-font-color);
+    fill: transparent;
   }
 
   .header-soc-item:is(:hover, :focus) .header-soc-icon {
-    fill: var(--accent-color);
+    stroke: var(--accent-color);
   }
 }
