@@ -1,11 +1,11 @@
 :root {
   --main-bgr-color: #e2e2e2;
   --advantages-bgr-color: #1e1823;
-  --footer-bgr-color: #1e1823;
   --accent-color: #fd9222;
-  --main-font-color: #111;
+  --main-font-color: #111111;
   --light-font-color: #fff;
   --light-modal-color: #FCF1E0;
   --modal-btn-bgr-color: #FAFAFA;
   --main-font-color-transparent: rgba(17, 17, 17, 0.7);
+  --font-second: 'Roboto', sans-serif;
 }
