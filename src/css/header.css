@@ -18,10 +18,7 @@
 }
 
 .header-logo-text {
-  font-family: 'Montserrat';
   font-weight: 700;
-  font-size: 14px;
-  line-height: calc(18 / 14);
   letter-spacing: -0.03em;
 }
 
@@ -58,7 +55,7 @@
 }
 
 .header-menu {
-  background-color: var(--footer-bgr-color);
+  background-color: var(--advantages-bgr-color);
   z-index: 100;
   position: fixed;
   top: 0;
@@ -108,10 +105,8 @@
   justify-content: center;
   flex-direction: column;
   gap: 24px;
-  font-family: 'Montserrat';
 
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
 
   letter-spacing: -0.02em;
@@ -167,6 +162,7 @@
   }
 
   .header-menu-open-icon {
+    display: block;
     width: 32px;
     height: 32px;
   }
@@ -190,9 +186,9 @@
     padding-bottom: 32px;
   }
 
-  .header-wrap {
+  /* .header-wrap {
     justify-content: unset;
-  }
+  } */
   .header-logo-link {
     margin-right: 188px;
   }
@@ -227,10 +223,10 @@
   .header-nav {
   }
   .header-nav-list {
-    font-family: 'Montserrat';
+
 
     font-weight: 500;
-    font-size: 14px;
+
     line-height: calc(16 / 14);
 
     letter-spacing: -0.02em;
@@ -263,6 +259,12 @@
   .header-nav-item:is(:hover, :focus):after {
     width: 24px;
   }
+  .header-soc-icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
   .header-soc-icon {
     fill: var(--main-font-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
