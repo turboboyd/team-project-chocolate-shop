@@ -11,4 +11,132 @@
     background-repeat: no-repeat;
     background-position: top 0 left 0;
 }
+.is-hidden {
+    opacity: 0;
+}
+.modal-subscribe-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 21px;
+    margin-right: 20px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 
+}
+.modal-subscribe-close-icon{
+    stroke: #FFFFFF;
+}
+.modal-subscribe-title{
+    margin-top: 162px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    width: 263px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.accent{
+    color: var(--accent-color);
+}
+.modal-subscribe-wrap{
+    display: flex;
+    align-items: center; 
+    width: 263px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    margin-right: 24px;
+    margin-left: 24px;
+}
+.modal-subscribe-but{
+    width: 100px;
+    font-size: 14px;
+    line-height: 1.21;
+    border-radius: 100px;
+    border: transparent;
+    font-weight: 600;
+    padding: 14px 22px;
+    height: 45px;
+    background-color: var(--accent-color);
+    color: var(--light-font-color);
+    margin-left: auto;
+}
+
+.modal-subscribe-but:is(:hover, :focus) {
+    background-color: var(--light-modal-color);
+    color: var(--accent-color);
+}
+.modal-subscribe-input{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    width: 112px;
+    margin-left: 18px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-right: 33px;
+    padding: 0;
+    border: 0;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+@media screen and (min-width: 768px){
+.modal-subscribe {
+    width: 538px;
+    height: 412px;
+    background-image: url(../img/modal-hero/bar-chocolate-tabl-desk-1.jpg);
+    
+}
+.modal-subscribe-title {
+    margin-top: 184px;
+    margin-bottom: 28px;
+    margin-left: 40px;
+    width: 298px;
+    font-size: 24px;
+    line-height: 1.17;
+}
+.modal-subscribe-wrap {
+    width: 458px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-right: auto;
+    border:none;
+}
+
+.modal-subscribe-input {
+    width: 313px;
+    margin: 0;
+    padding-left: 24px;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 30px;
+    background:#FAFAFA;;
+}
+.modal-subscribe-but {
+    width: 100px;
+    font-size: 14px;
+    line-height: 1.21;
+    border-radius: 100px;
+    border: transparent;
+    font-weight: 600;
+    padding: 14px 22px;
+    height: 45px;
+    background-color: var(--accent-color);
+    color: var(--light-font-color);
+    margin-left: 8px;
+    
+}
+.modal-subscribe-close {
+    margin-top: 24px;
+    margin-right: 24px;
+    width: 28px;
+    height: 28px;
+}
+}
