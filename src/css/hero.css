@@ -1,5 +1,5 @@
 .hero-box {
-  background-color: gray;
+  background-color: var(--advantages-bgr-color);
   padding: 395px 20px 20px 20px;
   background-image: linear-gradient(rgba(46, 47, 66, 0), rgba(46, 47, 66, 0)),
     url('../img/hero/chocolate-covered-mobile-1x.jpg');
@@ -7,7 +7,6 @@
   background-position: center;
   background-size: cover;
   border-radius: 30px;
-  max-width: 1440px;
   margin: 0 auto;
 }
 @media (min-device-pixel-ratio: 2),
@@ -55,7 +54,7 @@
   font-size: 20px;
   line-height: 120%; /* 24/20 */
   letter-spacing: -0.03em;
-  color:#ffffff;
+  color: var(--light-font-color);
 }
 
 .hero-btns {
@@ -67,42 +66,36 @@
   margin-bottom: 32px;
 }
 .hero-btn-baynow {
-  color: #ffffff;
-  background-color: #fd9222;
+  color: var(--light-font-color);
+  background-color: var(--accent-color);
   padding: 12px 28px;
   border: none;
   border-radius: 100px;
   cursor: pointer;
-  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition) ;
 }
 
 .hero-btn-baynow:hover,
 .hero-btn-baynow:focus {
-  color: #fd9222;
-  background-color: #fcf1e0;
+  color: var(--accent-color);
+  background-color: var(--light-modal-color);
   padding: 12px 28px;
 }
 
 .hero-btn-howmade {
   padding: 11px 26px;
-  border: 1px solid #ffffff ;
+  border: 1px solid var(--light-font-color) ;
   background-color: transparent;
-  color: #ffffff;
+  color: var(--light-font-color);
   border-radius: 100px;
-  transition:  300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:  var(--transition);
 }
 
 .hero-btn-howmade:hover,
 .hero-btn-howmade:focus {
-  border: 1px solid #fd9222;
-  color: #fd9222;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
-
-/* .scroll-box {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-} */
 
 .hero-scroll-text {
   font-family: 'Montserrat';
@@ -111,7 +104,7 @@
   font-size: 12px;
   line-height: 116.666667%; /* 14/12 */
   letter-spacing: -0.03em;
-  color:white;
+  color: var(--light-font-color);
   
 }
 
@@ -125,16 +118,14 @@
 .hero-scroll-icon {
   height: 28px;
   width: 28px;
-  background-color: white;
+  background-color: var(--light-font-color);
   border-radius: 50%;
+  fill: var(--accent-color);
 }
-/* .hero-scroll-icon:hover,
-.hero-scroll-icon:focus, */
+
 .hero-btn-scroll:hover,
 .hero-btn-scroll:focus {
-  
-  fill: black;
-  color:#fd9222;
+  cursor: pointer;
 }
 
 

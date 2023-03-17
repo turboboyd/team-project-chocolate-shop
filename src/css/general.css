@@ -1,10 +1,13 @@
 /* ЗАГАЛЬНІ НАЛАШТУВАННЯ */
 body{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--main-font-color);
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -21,7 +24,6 @@ body{
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--main-font-color);
   margin-bottom: 32px;
 }
 
@@ -47,6 +49,9 @@ body{
   line-height: 1.214;
   background-color: var(--accent-color);
   color: var(--light-font-color);
+  transition-property: color, background-color;
+  transition-duration: 800ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .button:is(:hover, :focus) {
   background-color: var(--light-modal-color);
@@ -54,7 +59,7 @@ body{
 }
 
 /* Налаштування ТІЛЬКИ для мобільної версії і менше */
-@media screen and (width: 767px) {
+@media screen and (max-width: 767px) {
   .title {
     font-size: 20px;
     line-height: 1.2;
@@ -64,14 +69,14 @@ body{
 /* Налаштування для ширини екрану MOBILE з 375px до 767 */
 @media screen and (min-width: 375px) {
   .container {
-    width: 365px;
+    max-width: 365px;
   }
 }
 
 /* Налаштування для ширини екрану TABLET з 768px до 1199 */
 @media screen and (min-width: 768px) {
   .container {
-    width: 734px;
+    max-width: 734px;
   }
 
   .section {
@@ -90,7 +95,7 @@ body{
 /* Налаштування для ширини екрану DESKTOP від 1200 */
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1166px;
+    max-width: 1166px;
   }
 
   .section {
