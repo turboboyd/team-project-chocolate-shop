@@ -50,10 +50,13 @@ body{
   line-height: 1.214;
   background-color: var(--accent-color);
   color: var(--light-font-color);
+  border: none;
+  transition: background-color var(--transition) ;
   transition-property: color, background-color;
   transition-duration: 800ms;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .button:is(:hover, :focus) {
   background-color: var(--light-modal-color);
   color: var(--accent-color);

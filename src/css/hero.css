@@ -26,12 +26,6 @@
   padding-bottom: 72px;
 }
 
-.hero-container {
-  max-width: 375px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
 .hero-title {
   position: absolute;
   width: 1px;
@@ -65,36 +59,20 @@
   align-items: center;
   margin-bottom: 32px;
 }
-.hero-btn-baynow {
-  color: var(--light-font-color);
-  background-color: var(--accent-color);
-  padding: 12px 28px;
-  border: none;
-  border-radius: 100px;
-  cursor: pointer;
-  transition: background-color var(--transition) ;
-}
 
-.hero-btn-baynow:hover,
-.hero-btn-baynow:focus {
-  color: var(--accent-color);
-  background-color: var(--light-modal-color);
-  padding: 12px 28px;
-}
 
-.hero-btn-howmade {
-  padding: 11px 26px;
+.hero-btn {
   border: 1px solid var(--light-font-color) ;
   background-color: transparent;
   color: var(--light-font-color);
-  border-radius: 100px;
   transition:  var(--transition);
 }
 
-.hero-btn-howmade:hover,
-.hero-btn-howmade:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
+  background-color: transparent;
 }
 
 .hero-scroll-text {
@@ -105,7 +83,7 @@
   line-height: 116.666667%; /* 14/12 */
   letter-spacing: -0.03em;
   color: var(--light-font-color);
-  
+  transition:  var(--transition);
 }
 
 .hero-btn-scroll {
@@ -113,6 +91,7 @@
   gap: 14px;
   cursor: pointer;
   align-items:center;
+  max-width: 110px;
 }
 
 .hero-scroll-icon {
@@ -121,11 +100,18 @@
   background-color: var(--light-font-color);
   border-radius: 50%;
   fill: var(--accent-color);
+  transition:  var(--transition);
 }
 
-.hero-btn-scroll:hover,
-.hero-btn-scroll:focus {
-  cursor: pointer;
+a:hover .hero-scroll-text,
+a:focus .hero-scroll-text {
+    color: var(--accent-color)
+}
+
+ a:hover .hero-scroll-icon,
+ a:focus .hero-scroll-icon {
+  background-color:var(--accent-color);
+  fill: var(--light-font-color);
 }
 
 
@@ -138,11 +124,7 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .hero-container {
-    max-width: 744px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
+ 
 
   .hero-btn-flex {
     display: flex;
@@ -183,11 +165,7 @@
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
-  .hero-container {
-    max-width: 1200px;
-    padding: 0 32px;
-    margin: 0 auto;
-  }
+ 
 
   .hero-box {
     padding: 381px 40px 40px 40px;
