@@ -4,6 +4,7 @@ body{
     font-size: 14px;
     line-height: 1.29;
     color: var(--main-font-color);
+    background-color: var(--modal-btn-bgr-color);
 }
 
 .container {
@@ -49,8 +50,6 @@ body{
   line-height: 1.214;
   background-color: var(--accent-color);
   color: var(--light-font-color);
-  border: none;
-  transition: background-color var(--transition) ;
 }
 
 .button:is(:hover, :focus) {

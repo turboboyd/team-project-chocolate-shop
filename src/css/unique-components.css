@@ -1,0 +1,333 @@
+/* body {
+    font-family: Montserrat, sans-serif;
+    color: #111111;
+  
+  } */
+  
+  /* .unique-components-section{
+  padding: 72px 0;
+  } */
+  /* .unique-components-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  } */
+  
+  .unique-components-title{
+    
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: #111111;
+    text-align: center;
+    }
+    
+    
+    /* .unique-components-title>span{
+      color: #FD9222;
+    } */
+    
+    .unique-components-text,
+    .unique-components-benefitsdesc{
+      margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #111111;
+    text-align: center;
+    }
+    
+    /* .unique-components-list{
+      margin:auto 0;
+    } */
+    
+    .unique-components-item{
+      position: relative;
+      border-radius: 15px;
+      text-align: center;
+      padding: 28px;
+      
+      /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    
+    }
+    .unique-components-item + .unique-components-item{
+      margin-top: 20px;
+    }
+    /* .unique-components-wrapper{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      background-color: black;
+    }  */
+    
+    .unique-components-item:nth-child(4n+1){
+      background-color: #FD9222;
+      color: #fff;
+    }
+    
+    .unique-components-item:nth-child(2n){
+      border: 1px solid #FD9222;
+    }
+    
+    .unique-components-item:nth-child(3n){
+      background-color: #1E1823;
+      color: #fff;
+    }
+    
+   
+    
+     .unique-components-section img {
+      margin: 0 auto;
+      margin-bottom: 25px;
+    } 
+    
+    .unique-components-cardname{
+     
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: left;
+    
+    }
+    
+    .unique-components-back{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left: 0;
+      
+      text-align: left;
+      overflow: auto;
+      background-color: #fff;
+      padding-right: 28px;
+      padding-left: 28px;
+     
+    }
+  
+    .unique-components-backcardtitle{
+      margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+    }
+    
+    .unique-components-thumb{
+      position: relative;
+    }
+  
+    .unique-components-wrap{
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      
+      
+    }
+    
+    
+    .unique-components-blocktext{
+      display: inline-block;
+      padding: 6px 16px;
+      font-size: 400;
+      font-size: 10px;
+      line-height: 1.2;
+      margin-right: 6px;
+      margin-bottom: 24px;
+      border-radius: 35px;
+    }
+    .unique-components-blocktext:last-child{
+      margin-right: 0;
+    }
+    .unique-components-benefitsdesc{
+      text-align: left;
+    }
+    
+    .unique-components-blocktext:nth-child(even){
+      background-color: #FD9222;
+      border-color: #FD9222;
+      color: #fff;
+      
+    }
+    .unique-components-blocktext:nth-child(2n+1){
+      border: 1px solid #FD9222;
+      color: #111111;
+    }
+    
+    /* .unique-components-back{
+      display: none;
+    } */
+    /* @media screen and (min-width: 375px) {
+    .unique-components-container{
+      max-width: 375px;
+      padding: 0 20px;
+    }
+    } */
+    
+    /* @media screen and (max-width: 1199px) {
+    .unique-components-back{
+      display: none;
+    }
+    } */
+    
+    
+    @media screen and (min-width: 768px) {
+      /* .unique-components-container{
+        max-width: 768px;
+        padding: 0 32px;
+      } */
+      .unique-components-title{
+        width: 411px;
+        margin: 0 auto 28px;
+        font-size: 24px;
+         line-height: 1.17;
+      }
+      
+      .unique-components-text{
+        margin:0 auto 50px;
+        width: 487px;
+      }
+      .unique-components-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+      }
+      .unique-components-item{
+        cursor: pointer;
+        width: 335px;
+      }
+     
+      .unique-components-item + .unique-components-item{
+        margin-top: 0;
+      }
+    }
+    
+    @media screen and (min-width: 1200px) {
+      
+  
+      .unique-components-container{
+        max-width: 1200px;
+      }
+  
+    .unique-components-list{
+      flex-wrap: nowrap;
+      gap: 19px;
+    }
+    .unique-components-item{
+      width: 270px;
+    }
+  
+  
+  
+    .unique-components-item{
+      transition: transform 3000ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .unique-components-back,
+    .unique-components-front{
+    backface-visibility: hidden;
+     transition: transform 3000ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .unique-components-back {
+      transform:  rotateY(180deg);
+    }
+   
+    .unique-components-item:is(:hover, :focus) .unique-components-front {
+      transform: perspective(600px) rotateY(180deg);
+    
+    }
+   
+    .unique-components-item:is(:hover, :focus) .unique-components-back {
+      transform:rotateY(0);
+    }
+  
+  
+  
+  
+     .unique-components-wrap{
+      visibility: hidden;
+    }
+    .unique-components-item:is(:hover, :focus) .unique-components-wrap{
+      visibility: visible;
+    } 
+  
+    /* .unique-components-front{
+      transform: perspective(600px) rotateY(0deg);
+    } */
+  
+   
+  
+  
+  
+  
+    /* 
+   
+    
+    
+     */
+  }
+  
+  
+  
+  
+  
+  
+  
+    /* .unique-components-item{
+    animation-name: cardanimateLeft;
+      animation-duration: .5s;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+    }
+    
+    .unique-components-item:nth-child(2n){
+      animation-name: cardanimateRight;}
+    
+      .unique-components-item:nth-child(2n+1){
+        animation-name: cardanimateLeft;}
+    
+    @keyframes cardanimateRight {
+      0% {
+        transform: translateX(200px);
+      }
+      40% {
+        transform: translateX(100px);
+      }
+      90% {
+        transform: translateX(0);
+      }
+      95% {
+        transform: translateX(5px);
+        
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes cardanimateLeft {
+      0% {
+        transform: translateX(-200px);
+      }
+      50% {
+        transform: translateX(-100px);
+      }
+      90% {
+        transform: translateX(0);
+      }
+      95% {
+        transform: translateX(-5px);
+        
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+     */
