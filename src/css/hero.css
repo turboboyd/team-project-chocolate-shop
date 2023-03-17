@@ -1,0 +1,210 @@
+.hero-box {
+  background-color: var(--advantages-bgr-color);
+  padding: 395px 20px 20px 20px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0), rgba(46, 47, 66, 0)),
+    url('../img/hero/chocolate-covered-mobile-1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../img/hero/chocolate-covered-mobile-2x.jpg');
+  }
+}
+
+.hero {
+  padding-bottom: 72px;
+}
+
+.hero-container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hero-subtitle {
+  margin-bottom: 32px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%; /* 24/20 */
+  letter-spacing: -0.03em;
+  color: var(--light-font-color);
+}
+
+.hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.hero-btn-baynow {
+  color: var(--light-font-color);
+  background-color: var(--accent-color);
+  padding: 12px 28px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color var(--transition) ;
+}
+
+.hero-btn-baynow:hover,
+.hero-btn-baynow:focus {
+  color: var(--accent-color);
+  background-color: var(--light-modal-color);
+  padding: 12px 28px;
+}
+
+.hero-btn-howmade {
+  padding: 11px 26px;
+  border: 1px solid var(--light-font-color) ;
+  background-color: transparent;
+  color: var(--light-font-color);
+  border-radius: 100px;
+  transition:  var(--transition);
+}
+
+.hero-btn-howmade:hover,
+.hero-btn-howmade:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.hero-scroll-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 116.666667%; /* 14/12 */
+  letter-spacing: -0.03em;
+  color: var(--light-font-color);
+  
+}
+
+.hero-btn-scroll {
+  display: flex;
+  gap: 14px;
+  cursor: pointer;
+  align-items:center;
+}
+
+.hero-scroll-icon {
+  height: 28px;
+  width: 28px;
+  background-color: var(--light-font-color);
+  border-radius: 50%;
+  fill: var(--accent-color);
+}
+
+.hero-btn-scroll:hover,
+.hero-btn-scroll:focus {
+  cursor: pointer;
+}
+
+
+
+
+
+/* Mobile */
+@media screen and (min-width: 375px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 744px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .hero-btn-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-btns {
+    gap: 14px;
+    justify-content: unset;
+    margin-bottom: 0;
+  }
+
+  .hero-box {
+    padding: 671px 40px 40px 40px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0), rgba(46, 47, 66, 0)),
+      url('../img/hero/chocolate-covered-tablet-1x.jpg');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../img/hero/chocolate-covered-tablet-2x.jpg');
+    }
+  }
+
+  .hero-subtitle {
+    max-width: 484px;
+    font-size: 28px;
+    line-height: 121.428571%; /* 34/28 */
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    max-width: 1200px;
+    padding: 0 32px;
+    margin: 0 auto;
+  }
+
+  .hero-box {
+    padding: 381px 40px 40px 40px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0), rgba(46, 47, 66, 0)),
+      url('../img/hero/chocolate-covered-desktop-1x.jpg');
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../img/hero/chocolate-covered-desktop-2x.jpg');
+    }
+  }
+}

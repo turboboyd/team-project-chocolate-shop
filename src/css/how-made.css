@@ -1,0 +1,65 @@
+.how-made-section {
+  background-color: #fafafa;
+  /* change on var main-bgr-color */
+}
+
+.title-accent-color {
+  color: var(--accent-color);
+}
+.how-made-video {
+  border-radius: 15px;
+}
+
+.how-made-text-box {
+  border-radius: 15px;
+  background-color: #fff;
+}
+.how-made-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--main-font-color);
+  margin-bottom: 20px;
+}
+
+.how-made-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--main-font-color);
+}
+
+.how-made-item::before {
+  display: inline-block;
+  content: '';
+  margin-right: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--main-font-color);
+  border: 1px solid #eceded;
+}
+
+@media screen and (max-width: 767px) {
+  .how-made-video-box {
+    margin-bottom: 20px;
+  }
+  .how-made-video {
+    max-width: 335px;
+    min-height: 500px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/how-made/mobile-poster.jpg);
+  }
+  .how-made-text-box {
+    padding: 20px 14px;
+  }
+
+  .how-made-item {
+    margin-bottom: 18px;
+  }
+  .how-made-item:last-child {
+    margin-bottom: 0;
+  }
+}
