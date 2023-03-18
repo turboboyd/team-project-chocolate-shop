@@ -47,26 +47,27 @@
   gap: 16px;  
 }
 .review-slider .slick-dots {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   gap: 13px;
-  height: 13px;
+  height: 13px; */
+  width: 106px;
 }
-.review-slider .slick-dots button {
+/* .review-slider .slick-dots button {
   height: 13px;
   width: 13px;
   background-color: var(--border-transparent-color);
   font-size: 0;
   border-radius: 50%;
   border: none;
-}
-.review-slider .slick-dots .slick-active button {
+} */
+/* .review-slider .slick-dots .slick-active button {
   width: 28px;
   background-color: var(--accent-color);
   border-radius: 40%;
   height: 13px;
-} 
+}  */
 .review-btn {
   background-color: transparent;
   border: 1px solid var(--accent-color);
