@@ -11,11 +11,20 @@
     background-repeat: no-repeat;
     background-position: top 0 left 0;
 }
-.is-hidden {
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .modal-subscribe{
+        background-image: url(../img/modal-hero/bar-chocolate-mob-2.jpg);
+    }
+}
+.modal-window {
     opacity: 0;
 }
 .modal-subscribe-close {
     display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     margin-left: auto;
@@ -64,6 +73,9 @@
     background-color: var(--accent-color);
     color: var(--light-font-color);
     margin-left: auto;
+
+    transition-property: background-color, color;
+    transition: var(--transition);
 }
 
 .modal-subscribe-but:is(:hover, :focus) {
@@ -89,9 +101,17 @@
 .modal-subscribe {
     width: 538px;
     height: 412px;
-    background-image: url(../img/modal-hero/bar-chocolate-tabl-desk-1.jpg);
-    
+    background-image: url(../img/modal-hero/bar-chocolate-tab-desk-1.jpg);
 }
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .modal-subscribe{
+        background-image: url(../img/modal-hero/bar-chocolate-tab-desk-2.jpg);
+    }
+}
+
 .modal-subscribe-title {
     margin-top: 184px;
     margin-bottom: 28px;
