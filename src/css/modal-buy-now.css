@@ -206,6 +206,10 @@
   .buynow-comment {
     height: 137px;
   }
+  .label-buynow {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
   .input-buynow {
     padding: 22px 24px;
     font-size: 18px;
