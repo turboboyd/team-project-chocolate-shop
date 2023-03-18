@@ -41,3 +41,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 } */
+
+
+
+
+
+/* Світлана додала стилі скролл бару */
+@import url('./scrollbar.css');
