@@ -1,3 +1,36 @@
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+
+  border-radius: 15px;
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+}
+
 .modal-buynow {
   position: fixed;
   min-width: 311px;
@@ -24,6 +57,8 @@
   padding: 0;
   width: 24px;
   height: 24px;
+}
+.buynow-close {
 }
 .buynow-title {
   color: var(--accent-color);
@@ -92,6 +127,7 @@
   border-color: rgba(64, 64, 64, 0.3);
   border-radius: 15px;
   background-color: transparent;
+  width: 100%;
 }
 
 .buynow-comment {
@@ -109,6 +145,14 @@
 }
 .buynow-marg {
   margin-bottom: 0;
+}
+.input-buynow-wrap {
+  position: relative;
+}
+.mcard-buynow {
+  position: absolute;
+  top: 12px;
+  right: 14px;
 }
 @media screen and (max-width: 767px) {
 }
@@ -142,7 +186,7 @@
   .name-buynow {
     flex-direction: row;
     justify-content: space-between;
-    width: calc((100% - 21px) / 2);
+    min-width: calc((100% - 21px) / 2);
     gap: 21px;
   }
   .buynow-marg {
@@ -150,6 +194,20 @@
   }
   .submit-buynow {
     max-width: 133px;
+  }
+  .mcard-buynow {
+    top: 18px;
+    right: 24px;
+    width: 44px;
+    height: 30px;
+  }
+  .buynow-comment {
+    height: 137px;
+  }
+  .input-buynow {
+    padding: 22px 24px;
+    font-size: 18px;
+    line-height: calc(22 / 18);
   }
 }
 @media screen and (min-width: 1200px) {
