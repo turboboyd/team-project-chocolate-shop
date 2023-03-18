@@ -25,6 +25,8 @@
 }
 
 .how-made-item {
+  display: flex;
+  align-items: baseline;
   margin-bottom: 18px;
   font-weight: 400;
   font-size: 14px;
@@ -36,14 +38,19 @@
   margin-bottom: 0;
 }
 
+.how-made-pretext {
+  display: inline-block;
+}
+
 .how-made-item::before {
   display: inline-block;
+  flex-shrink: 0;
   content: '';
   margin-right: 8px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--main-font-color);
+  background-color: #4c4c4c;
   border: 1px solid #eceded;
 }
 
