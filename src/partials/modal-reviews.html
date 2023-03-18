@@ -2,7 +2,7 @@
     <div class="btn-wrap">
         <button type="button" class="btn-close-leave-review  js-modal-close">
             <svg class="icon-close-leave-review js-modal-close" width="24" height="24">
-                <use href="./symbol-defs.svg#icon-btn-close-leave-review"></use>
+                <use href="../img/icons.svg#icon-close"></use>
             </svg>
         </button>
     </div>
@@ -13,25 +13,24 @@
         <form class="form-modal-leave-review">
             <div class="form-field-modal-leave-review">
                 <input type="text" class="input-modal-leave-review text-input-modal-leave-review" name="name-review"
-                    placeholder="Name" required>
+                    placeholder="Name" required pattern=".{1,20}" title="The number of characters should not exceed 20">
             </div>
             <div class=" form-field-modal-leave-review">
                 <input type="email" class="input-modal-leave-review text-input-modal-leave-review" name="email-review"
-                    placeholder="Enter your email" required>
+                    placeholder="Enter your email" required pattern=".{10,40}"
+                    title="The number of characters should not be less than 10 and should not exceed 40">
             </div>
-
-
             <div class="form-field-modal-leave-review">
                 <div class="country-container"></div>
                 <input type="tel" class="input-modal-leave-review phone-input text-input-modal-leave-review"
-                    name="tel-review" placeholder="Phone number" required>
+                    name="tel-review" placeholder="Phone number" required pattern="^\+[0-9]{12}$"
+                    title="Number of digits should not be 12">
             </div>
-
-
-
             <div class="form-field-modal-leave-review message-form-field-modal-leave-review">
                 <textarea class="message-modal-leave-review text-input-modal-leave-review" name="message-review"
-                    placeholder="Enter text" required></textarea>
+                    placeholder="Enter text" pattern="^[a-zA-Z]{5,500}"
+                    title="The number of characters should not be less than 5 and should not exceed 500"
+                    required></textarea>
             </div>
             <button type="submit" class="btn-modal-review">Send</button>
         </form>
