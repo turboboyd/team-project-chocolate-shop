@@ -5,9 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="/team-project-chocolate-shop/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
-        <link
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+      <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Roboto&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/team-project-chocolate-shop/assets/index-41374e8a.js"></script>
-    <link rel="stylesheet" href="/team-project-chocolate-shop/assets/index-19bb5cb0.css">
+    <link rel="stylesheet" href="/team-project-chocolate-shop/assets/index-17fd9101.css">
   </head>
   <body>
     <header class="header">
@@ -178,7 +178,7 @@
         </div>
       </div>
     </section>
-      <div class="backdrop ">
+      <div class="backdrop is-hidden">
     <div class="modal-hero">
         <button type="button" class="modal-hero-close" >
         <svg class="modal-hero-close-icon" width="22" height="22">
@@ -572,53 +572,227 @@
 </section>
 <!-- --------------SECTION TOP-SELLERS------------------------------------------------------ -->
 
-      <div class="modal-buynow">
-  <button class="modal-buynow-close" type="button"></button>
+      <div class="modal-buynow active" data-modal="modal-buy-now">
+  <button class="modal-buynow-close" type="button">
+    <svg class="buynow-close" width="24" height="24">
+      <use href="../img/icons.svg#icon-modal-hero-close"></use>
+    </svg>
+  </button>
   <div class="buynow-counteiner">
-    <h2 class="buynow-title">BUY<span class="buynow-title-now">NOW</span></h2>
+    <h2 class="buynow-title title">
+      BUY&nbsp;<span class="buynow-title-now">NOW</span>
+    </h2>
     <ul class="buynow-list">
       <li class="buynow-item">
-        <img src="" alt="" class="buynow-img" />
-        <button class="buynow-button" type="button">100 g</button>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              ../img/modal-buy-now/chocolate-kinder-tabdes.webp   1x,
+              ../img/modal-buy-now/chocolate-kinder-tabdes2x.webp 2x
+            "
+            width="120"
+            height="107"
+            media="(min-width: 768px)"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              ../img/modal-buy-now/chocolate-kinder.webp   1x,
+              ../img/modal-buy-now/chocolate-kinder2x.webp 2x
+            "
+            width="167"
+            height="148"
+            media="(max-width: 767px)"
+          />
+          <source
+            type="image/png"
+            srcset="
+              ../img/modal-buy-now/chocolate-kinder-tabdes.png   1x,
+              ../img/modal-buy-now/chocolate-kinder-tabdes2x.png 2x
+            "
+            width="120"
+            height="107"
+            media="(min-width: 768px)"
+          />
+          <source
+            type="image/png"
+            srcset="
+              ../img/modal-buy-now/chocolate-kinder.png   1x,
+              ../img/modal-buy-now/chocolate-kinder2x.png 2x
+            "
+            width="167"
+            height="148"
+            media="(max-width: 767px)"
+          />
+
+          <img
+            src="../img/modal-buy-now/chocolate-kinder.png"
+            alt="kinder"
+            class="buynow-img"
+            width="167"
+            height="148"
+          />
+        </picture>
+        <button class="products-btn" type="button">100 g</button>
       </li>
       <li class="buynow-item">
-        <img src="" alt="" class="buynow-img" />
-        <button class="buynow-button" type="button">200 g</button>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              ../img/modal-buy-now/chocolate-praline-tabdes.webp   1x,
+              ../img/modal-buy-now/chocolate-praline-tabdes2x.webp 2x
+            "
+            width="120"
+            height="107"
+            media="(min-width: 768px)"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              ../img/modal-buy-now/chocolate-praline.webp   1x,
+              ../img/modal-buy-now/chocolate-praline2x.webp 2x
+            "
+            width="167"
+            height="148"
+            media="(max-width: 767px)"
+          />
+          <source
+            type="image/png"
+            srcset="
+              ../img/modal-buy-now/chocolate-praline-tabdes.png   1x,
+              ../img/modal-buy-now/chocolate-praline-tabdes2x.png 2x
+            "
+            width="120"
+            height="107"
+            media="(min-width: 768px)"
+          />
+          <source
+            type="image/png"
+            srcset="
+              ../img/modal-buy-now/chocolate-praline.png   1x,
+              ../img/modal-buy-now/chocolate-praline2x.png 2x
+            "
+            width="167"
+            height="148"
+            media="(max-width: 767px)"
+          />
+
+          <img
+            src="../img/modal-buy-now/chocolate-praline.png"
+            alt="praline"
+            class="buynow-img"
+            width="167"
+            height="148"
+          />
+        </picture>
+        <button class="products-btn" type="button">200 g</button>
       </li>
       <li class="buynow-item">
-        <img src="" alt="" class="buynow-img" />
-        <button class="buynow-button" type="button">300 g</button>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              ../img/modal-buy-now/chocolate-dark-tabdes.webp   1x,
+              ../img/modal-buy-now/chocolate-dark-tabdes2x.webp 2x
+            "
+            width="120"
+            height="107"
+            media="(min-width: 768px)"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              ../img/modal-buy-now/chocolate-dark.webp 1x,
+              ../img/modal-buy-now/chocolate-dark.webp 2x
+            "
+            width="167"
+            height="148"
+            media="(max-width: 767px)"
+          />
+          <source
+            type="image/png"
+            srcset="
+              ../img/modal-buy-now/chocolate-dark-tabdes.png   1x,
+              ../img/modal-buy-now/chocolate-dark-tabdes2x.png 2x
+            "
+            width="120"
+            height="107"
+            media="(min-width: 768px)"
+          />
+          <source
+            type="image/png"
+            srcset="
+              ../img/modal-buy-now/chocolate-dark.png   1x,
+              ../img/modal-buy-now/chocolate-dark2x.png 2x
+            "
+            width="167"
+            height="148"
+            media="(max-width: 767px)"
+          />
+
+          <img
+            src="../img/modal-buy-now/chocolate-dark.png"
+            alt="dark"
+            class="buynow-img"
+            width="167"
+            height="148"
+          />
+        </picture>
+        <button class="products-btn" type="button">300 g</button>
       </li>
-      <ul class="buynow-slider-list">
-        <li class="buynow-slider-item">
-          <button class="buynow-button-slider"></button>
-        </li>
-        <li class="buynow-slider-item">
-          <button class="buynow-button-slider"></button>
-        </li>
-        <li class="buynow-slider-item">
-          <button class="buynow-button-slider"></button>
-        </li>
-      </ul>
     </ul>
     <form class="buynow-form">
-      <label for="name">Personal information</label>
-      <input type="text" name="name" id="name" placeholder="Name" />
-      <input type="text" name="name" id="name" placeholder="Surname" />
-      <label for="email">Email</label>
+      <label class="label-buynow" for="name">Personal information</label>
+      <div class="name-buynow">
+        <input
+          class="input-buynow buynow-marg"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+        />
+        <input
+          class="input-buynow"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Surname"
+        />
+      </div>
+      <label class="label-buynow" for="email">Email</label>
       <input
+        class="input-buynow"
         type="email"
         name="email"
         id="email"
         placeholder="Enter your email"
       />
-      <label for="phone">Phone number</label>
-      <input type="tel" name="phone" id="phone" placeholder="Phone number" />
-      <label for="card">Card number</label>
-      <input type="text" name="card" id="card" placeholder="Enter card" />
-      <label for="com">Comment</label>
-      <textarea name="comment" id="com" placeholder="Enter text"></textarea>
-      <button type="submit">Submit</button>
+      <label class="label-buynow" for="phone">Phone number</label>
+      <input
+        class="input-buynow"
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Phone number"
+      />
+      <label class="label-buynow" for="card">Card number</label>
+      <input
+        class="input-buynow"
+        type="text"
+        name="card"
+        id="card"
+        placeholder="Enter card"
+      />
+      <label class="label-buynow" for="com">Comment</label>
+      <textarea
+        class="input-buynow buynow-comment"
+        name="comment"
+        id="com"
+        placeholder="Enter text"
+      ></textarea>
+      <button class="button submit-buynow" type="submit">Submit</button>
     </form>
   </div>
 </div>
@@ -750,9 +924,9 @@
     </div>
  </section>
   
-      <div class="backdrop is-hidden" >
+      <div class="backdrop modal-window" id="modal_1">
   <div class="modal-subscribe">
-    <button type="button" class="modal-subscribe-close">
+    <button type="button" class="modal-subscribe-close modal-close">
       <svg class="modal-subscribe-close-icon" width="22" height="22">
         <use href="../img/icons.svg#icon-close"></use>
       </svg>
@@ -781,19 +955,25 @@
         </p>
       </div>
       <div class="footer-contact">
-        <ul class="footer-contact-list list">
-          <li class="test-3">
-            <p class="footer-contact-text-1">Contact us</p>
-          </li>
-          <div class="test-1">
-            <li>
-              <p class="footer-contact-text-2">+380 (68) 443-94-26</p>
-            </li>
-            <li>
-              <p class="footer-contact-text-2">simplychoc@gmail.com</p>
-            </li>
-          </div>
-        </ul>
+        <div>
+          <p class="footer-contact-text-1">Contact us</p>
+          <address class="header-address">
+            <ul class="header-contect-list list">
+              <li class="header-tel-email">
+                <a
+                  class="header-connection-1 link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="header-tel-email">
+                <a class="header-connection-1 link" href="tel:+380684439426">
+                  +380 (68) 443-94-26</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
         <div class="footer-networks-container">
           <ul class="footer-networks-list list">
             <li class="">
@@ -816,20 +996,22 @@
     </div>
     <div class="footer-menu">
       <ul class="footer-menu-list list link">
-        <li class="">
-          <p class="footer-menu-text">Home</p>
+        <li class="footer-menu-link">
+          <a href="#hero" class="footer-menu-text link">Home</a>
         </li>
-        <li>
-          <p class="footer-menu-text">How it's made?</p>
+        <li class="footer-menu-link">
+          <a href="#how-made" class="footer-menu-text link">How it's made?</a>
         </li>
-        <li>
-          <p class="footer-menu-text">Our products</p>
+        <li class="footer-menu-link">
+          <a href="#products" class="footer-menu-text link">Our products</a>
         </li>
-        <li>
-          <p class="footer-menu-text">Top sellers</p>
+        <li class="footer-menu-link">
+          <a href="#top-sellers" class="footer-menu-text link">Top sellers</a>
         </li>
-        <li>
-          <p class="footer-menu-text">Chocolate is loved</p>
+        <li class="footer-menu-link">
+          <a href="#reviews" class="footer-menu-text link"
+            >Chocolate is loved</a
+          >
         </li>
       </ul>
     </div>
@@ -841,6 +1023,9 @@
     <script type="text/javascript"
       src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
     
 
