@@ -50,12 +50,12 @@
     background-color: #FCF1E0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    cursor: pointer;    
-    
-}
+    cursor: pointer; 
 
-.modal-hero-close:is(:hover, :focus){
-    background-color: var(--accent-color);
+}
+.modal-hero-close:is(:hover, :focus) {
+    background-color: var(--light-modal-color);
+    color: var(--accent-color);
 }
 
 .modal-feedback {
@@ -143,7 +143,7 @@
     .modal-feedback {
         width: 516px;
         height: 414px;
-        background-image: url(../img/modal-hero/modal-chocolate-tab-desk-1.png);
+        background-image: url(../img/modal-hero/modal-chocolate-tabl-desk-1.png);
     }
     
     .modal-feedback-close {
