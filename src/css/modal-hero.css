@@ -14,10 +14,7 @@
     z-index: 20;
     transition: 0.3s all;
 }
-.modal {
-    opacity: 0;
-    visibility: hidden;
-}
+
 .modal-hero {
     position: absolute;
     top: 50%;
@@ -166,7 +163,11 @@
     line-height: 1.14;
     color: #FCF1E0;
 }
-
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 20;
+}
 @media screen and (min-width: 768px){
     .modal-hero{
         width: 516px;
