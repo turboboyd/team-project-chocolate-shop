@@ -1,4 +1,5 @@
 /* Налаштування ТІЛЬКИ для мобільної версії і менше */
+
 @media screen and (max-width: 767px) {
   .top-sellers-text {
     font-size: 14px;
