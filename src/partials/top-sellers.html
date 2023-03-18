@@ -8,64 +8,64 @@
         <picture>
           <source
             srcset="
-              ../img/top-sellers/1img1x-desc-min.jpg 1x,
-              ../img/top-sellers/1img2x-desc-min.jpg 2x
+              ./img/top-sellers/1img1x-desc-min.jpg 1x,
+              ./img/top-sellers/1img2x-desc-min.jpg 2x
             "
             media="(min-width : 1200px) "
           />
           <source
             srcset="
-              ../img/top-sellers/1img1x-tab-min.jpg 1x,
-              ../img/top-sellers/1img2x-tab-min.jpg 2x
+              ./img/top-sellers/1img1x-tab-min.jpg 1x,
+              ./img/top-sellers/1img2x-tab-min.jpg 2x
             "
             media="(min-width : 768px) "
           />
           <source
             srcset="
-              ../img/top-sellers/1img1x-mob-min.jpg 1x,
-              ../img/top-sellers/1img2x-mob-min.jpg 2x
+              ./img/top-sellers/1img1x-mob-min.jpg 1x,
+              ./img/top-sellers/1img2x-mob-min.jpg 2x
             "
             media="(min-width : 375px) "
           />
           <img
-            src="../img/top-sellers/1img1x-desc-min.jpg"
+            src="./img/top-sellers/1img1x-desc-min.jpg"
             alt="coffe"
             width="368px"
             height="464px"
           />
         </picture>
-
         <p class="top-sellers-text">
           Crazy enough chocolate originates from a bean just like the coffee
           bean called Cacao. Cacao has been around for thousands of years and
           was first discovered by the Native American tribe called the Mayans.
         </p>
       </li>
+
       <li class="top-sellers-item">
         <picture>
           <source
             srcset="
-              ../img/top-sellers/2img1x-desc-min.jpg 1x,
-              ../img/top-sellers/2img2x-desc-min.jpg 2x
+              ./img/top-sellers/2img1x-desc-min.jpg 1x,
+              ./img/top-sellers/2img2x-desc-min.jpg 2x
             "
             media="(min-width : 1200px) "
           />
           <source
             srcset="
-              ../img/top-sellers/2img1x-tab-min.jpg 1x,
-              ../img/top-sellers/2img2x-tab-min.jpg 2x
+              ./img/top-sellers/2img1x-tab-min.jpg 1x,
+              ./img/top-sellers/2img2x-tab-min.jpg 2x
             "
             media="(min-width : 768px) "
           />
           <source
             srcset="
-              ../img/top-sellers/2img1x-mob-min.jpg 1x,
-              ../img/top-sellers/2img2x-mob-min.jpg 2x
+              ./img/top-sellers/2img1x-mob-min.jpg 1x,
+              ./img/top-sellers/2img2x-mob-min.jpg 2x
             "
             media="(min-width : 375px) "
           />
           <img
-            src="../img/top-sellers/2img1x-desc-min.jpg"
+            src="./img/top-sellers/2img1x-desc-min.jpg"
             alt="chocolate"
             width="368px"
             height="464px"
@@ -76,14 +76,14 @@
         <picture>
           <source
             srcset="
-              ../img/top-sellers/3img1x-desc-min.jpg 1x,
-              ../img/top-sellers/3img2x-desc-min.jpg 2x
+              ./img/top-sellers/3img1x-desc-min.jpg 1x,
+              ./img/top-sellers/3img2x-desc-min.jpg 2x
             "
             media="(min-width : 1200px) "
           />
 
           <img
-            src="../img/top-sellers/3img1x-desc-min.jpg"
+            src="./img/top-sellers/3img1x-desc-min.jpg"
             alt="chocolate-bar"
             width="368px"
             height="464px"
@@ -91,7 +91,20 @@
         </picture>
       </li>
     </ul>
-    <button type="button">Buy now</button>
+    <div class="top-sellers-button-wrap">
+      <p class="top-sellers-button-text">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
+      </p>
+      <button
+        type="button top-sellers-button "
+        class="js-open-modal button"
+        data-modal="modal-buy-now"
+      >
+        Buy now
+      </button>
+    </div>
   </div>
 </section>
 <!-- --------------SECTION TOP-SELLERS------------------------------------------------------ -->
