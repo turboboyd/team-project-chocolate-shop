@@ -1,0 +1,37 @@
+/*  Firefox */
+* {
+    scrollbar-width: 5px;
+    scrollbar-color: #FCF1E0 #fff;
+  }
+  
+    /*  Chrome, Edge, Safari */
+    *::-webkit-scrollbar {
+      width: 5px;
+    
+    }
+    
+    *::-webkit-scrollbar-track {
+      background: #fff;
+    }
+    *::-webkit-scrollbar-thumb {
+      background-color: #FCF1E0;
+      border-radius: 35px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #F16529;
+  }
+
+
+
+/*Приховати скрол*/
+
+  /* firefox */
+  /* * {
+    scrollbar-width: none; 
+} */
+/* webkit */
+/* *::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+} */
