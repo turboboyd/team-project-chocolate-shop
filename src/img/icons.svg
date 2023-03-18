@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
-  <defs>
+  <defs>y
     <symbol id="icon-ua-flag" viewBox="0 0 32 32">
       <path fill="gold" d="M31.832 5.058H.243v23.508h31.589V5.058z" style="fill:var(--color1, #ffd700)"/>
       <path fill="#0057b7" d="M.243 5.058h31.589v11.754H.243V5.058z" style="fill:var(--color2, #0057b7)"/>
