@@ -93,50 +93,50 @@ $(document).ready(function(){
                     arrows: false,
                     dots: true,
                     speed: 1000,
+                    variableWidth: true,
                     // autoplay: true,
                     // autoplaySpeed: 5000,
-                    easing: 'ease',
-                    variableWidth: true,
-                    infinite: true,
-                    touchThreshold: 10,
+                    // easing: 'ease',
+                    // infinite: true,
+                    // touchThreshold: 10,
                     waitForAnimate: false,
-                    responsive: [
-                        {
-                            breakpoint: 1166,
-                            settings: {
-                                variableWidth: true,
-                                infinite: true,
-                                dots: true,
-                                slidesToShow: 1,
-                                slidesPerRow: 1,
-                            }
-                        },
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                dots: true,
-                            }
-                        },
-                        {
-                            breakpoint: 375,
-                            settings: {
-                                dots: true,
-                                slidesPerRow: 1,
-                            }
-                        },
-                                                {
-                            breakpoint: 374,
-                            settings: {
-                                variableWidth: false,
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                slidesPerRow: 1,
-                                dots: true,
-                            }
-                        },
-                    ]
+                    // responsive: [
+                    //     {
+                    //         breakpoint: 1166,
+                    //         settings: {
+                    //             variableWidth: true,
+                    //             infinite: true,
+                    //             dots: true,
+                    //             slidesToShow: 1,
+                    //             slidesPerRow: 1,
+                    //         }
+                    //     },
+                    //     {
+                    //         breakpoint: 768,
+                    //         settings: {
+                    //             slidesToShow: 1,
+                    //             slidesToScroll: 1,
+                    //             dots: true,
+                    //         }
+                    //     },
+                    //     {
+                    //         breakpoint: 375,
+                    //         settings: {
+                    //             dots: true,
+                    //             slidesPerRow: 1,
+                    //         }
+                    //     },
+                    //                             {
+                    //         breakpoint: 374,
+                    //         settings: {
+                    //             variableWidth: false,
+                    //             slidesToShow: 1,
+                    //             slidesToScroll: 1,
+                    //             slidesPerRow: 1,
+                    //             dots: true,
+                    //         }
+                    //     },
+                    // ]
                 });
             }
         } else {

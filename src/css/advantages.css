@@ -1,7 +1,7 @@
 .advantages {
   padding-top: 36px;
   padding-bottom: 36px;
-  background: #1e1823;
+  background: var(--advantages-bgr-color);
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -15,7 +15,7 @@
   font-size: 18px;
   line-height: 1.1;
   text-align: left;
-  color: #fff;
+  color: var(--light-font-color);
   margin-bottom: 18px;
 }
 .advantages-text {
@@ -55,6 +55,17 @@
     gap: 88px;
   }
   .advantages-item {
-    width: calc((100% - 88px) / 4);
+    width: calc((100% - 176px) / 3);
+    position: relative;
+  }
+  .advantages-item:not(:last-child)::after {
+    content: '';
+    width: 1px;
+    height: 124px;
+    position: absolute;
+    display: block;
+    left: 340px;
+    bottom: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
   }
 }
