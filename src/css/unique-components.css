@@ -1,425 +1,171 @@
-/* body {
-    font-family: Montserrat, sans-serif;
-    color: #111111;
-  
-  } */
-  
-  /* .unique-components-section{
-  padding: 72px 0;
-  } */
-  /* .unique-components-container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-  } */
-  
-  .unique-components-back{
-    transform: perspective(600px) rotateY(-180deg);
-    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-    
-
-    .unique-components-back,
-    .unique-components-front{
-      backface-visibility: hidden;
-      transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .unique-components-front{
-      transform: perspective(600px) rotateY(0deg);
-    }
-    .unique-components-item:is(:hover, :focus) .unique-components-front{
-      transform: rotateY(-180deg);
-    }
-    
-    .unique-components-item:is(:hover, :focus) .unique-components-back {
-      transform: rotateY(0deg);
-    }
-  
-  
-  
-     .unique-components-sticky{
-      transition: visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
-      visibility: hidden;
-    }
-    .unique-components-item:is(:hover, :focus) .unique-components-sticky{
-      visibility: visible;
-    } 
-
-    .unique-components-item{
-      animation-name: cardanimateLeft;
-        animation-duration: .5s;
-        animation-timing-function: linear;
-        animation-iteration-count: 1;
-      }
-      
-      .unique-components-item:nth-child(2n){
-        animation-name: cardanimateRight;}
-      
-        .unique-components-item:nth-child(2n+1){
-          animation-name: cardanimateLeft;}
-      
-      @keyframes cardanimateRight {
-        0% {
-          transform: translateX(200px);
-        }
-        40% {
-          transform: translateX(100px);
-        }
-        90% {
-          transform: translateX(0);
-        }
-        95% {
-          transform: translateX(5px);
-          
-        }
-        100% {
-          transform: translateX(0);
-        }
-      }
-      
-      @keyframes cardanimateLeft {
-        0% {
-          transform: translateX(-200px);
-        }
-        50% {
-          transform: translateX(-100px);
-        }
-        90% {
-          transform: translateX(0);
-        }
-        95% {
-          transform: translateX(-5px);
-          
-        }
-        100% {
-          transform: translateX(0);
-        }
-
-        
-      }
-
-
-      .element-animation .element-show {
-        opacity: 1;
-        transition: opacity 1s;
-      }
-
-
-
-
-
-
-
-  .unique-components-title{
-    
-    font-weight: 600;
+  .components-title{
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: -0.03em;
-    color: #111111;
-    text-align: center;
     }
-    
-    
-    /* .unique-components-title>span{
-      color: #FD9222;
-    } */
-    
-    .unique-components-text,
-    .unique-components-benefitsdesc{
-      margin-bottom: 32px;
-    font-size: 14px;
+ 
+    .components-text,
+    .components-benefitsdesc{
+    margin-bottom: 32px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    color: #111111;
     text-align: center;
     }
     
-    /* .unique-components-list{
-      margin:auto 0;
-    } */
-    
-    .unique-components-item{
+    .components-item{
       position: relative;
-        border-radius: 15px;
       text-align: center;
       width: 100%;
       height: 270px;
       max-width: 335px;
       cursor: pointer;
-      /* background-color: #111111; */
-      /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-    
+      transition: transform var(--transition);
     }
-    .unique-components-item + .unique-components-item{
+    .components-item + .components-item{
       margin-top: 20px;
     }
-    /* .unique-components-wrapper{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 15px;
-      background-color: black;
-    }  */
     
-    .unique-components-item:nth-child(4n+1) .unique-components-front{
-      background-color: #FD9222;
-      color: #fff;
-    }
-    
-    .unique-components-item:nth-child(2n) .unique-components-front{
-      border: 1px solid #FD9222;
-      background-color: #fff;
-    }
-    
-    .unique-components-item:nth-child(3n) .unique-components-front{
-      background-color: #1E1823;
-      color: #fff;
-    }
-    
-   
-    
-     .unique-components-section img {
-      margin: 0 auto;
-      margin-bottom: 25px;
-    } 
-    
-    .unique-components-cardname{
-     
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    text-align: left;
-    
-    }
-    
-   .unique-components-wrapper{
-    
-    height: 100%;
-    overflow: hidden;
-    overflow: auto;
-   }
-    .unique-components-back{
-      /* position: absolute; */
-      /* width: 100%; */
-      height: 100%;
-      top:0;
-      left: 0;
-      /* height: 232px; */
-      text-align: left;
-      overflow: auto;
-      background-color: #fff;
-      /* padding-right: 28px;
-      padding-left: 28px; */
-      border-radius: 15px;
-     padding: 28px;
-    }
-  
-    .unique-components-backcardtitle{
-      margin-bottom: 8px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: calc(22 / 18);
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: #111111;
-    }
-    
-    /* .unique-components-thumb{
-      position: absolute;
-      top:0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: #fff;
-      border-radius: 15px;
-
-    } */
-  
-    .unique-components-sticky{
-      /* padding-top: 28px; */
-      position: sticky;
-      top: 0;
-      background-color: #fff;
-      
-      
-    }
-    
-    
-    .unique-components-blocktext{
-      display: inline-block;
-      padding: 6px 16px;
-      font-size: 400;
-      font-size: 10px;
-      line-height: 1.2;
-      margin-right: 6px;
-      margin-bottom: 24px;
-      border-radius: 35px;
-    }
-    .unique-components-blocktext:last-child{
-      margin-right: 0;
-    }
-    .unique-components-benefitsdesc{
-      text-align: left;
-    }
-    .unique-components-front{
+    .components-front{
       position: absolute; 
       top:0;
       width: 100%;
       height: 100%;
       border-radius: 15px;
       padding: 28px;
+      backface-visibility: hidden;
+      transition: transform var(--transition);
+      transform: perspective(600px) rotateY(0deg);
+    }
+    .components-item:is(:hover, :focus) .components-front{
+      transform: rotateY(-180deg);
+    }
+    .components-item:nth-child(4n+1) .components-front{
+      background-color: var(--accent-color);
+      color: var(--light-font-color);
+    }
+    
+    .components-item:nth-child(2n) .components-front{
+      border: 1px solid var(--accent-color);
+      background-color: var(--light-font-color);
+    }
+    
+    .components-item:nth-child(3n) .components-front{
+      background-color: var(--advantages-bgr-color);
+      color: var(--light-font-color);
+    }
+    
+     .components-section img {
+      margin: 0 auto 25px;
+    } 
+    
+    .components-cardname{
+    font-weight: 600;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: left;
+    }
+    
+   .components-wrapper{
+    height: 100%;
+    overflow: hidden;
+    overflow: auto;
+   }
+
+    .components-back{
+      height: 100%;
+      top:0;
+      left: 0;
+      text-align: left;
+      overflow: auto;
+      background-color: var(--light-font-color);
+      border-radius: 15px;
+     padding: 28px;
+     backface-visibility: hidden;
+      transition: transform var(--transition);
+     transform: perspective(600px) rotateY(-180deg);
+
+    }
+    .components-item:is(:hover, :focus) .components-back {
+      transform: rotateY(0deg);
+    }
+    .components-backcardtitle{
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    }
+    
+    .components-sticky{
+      position: sticky;
+      top: 0;
+      padding-bottom: 14px;
+      background-color: var(--light-font-color);
+    }
+    
+    .components-blocktext{
+      display: inline-block;
+      padding: 6px 16px;
+      font-size: 10px;
+      line-height: 1.2;
+      margin-right: 6px;
+      border-radius: 35px;
+    }
+    .components-block-last .components-blocktext{
+      padding: 6px 13px;
     }
 
-    .unique-components-blocktext:nth-child(even){
-      background-color: #FD9222;
-      border-color: #FD9222;
-      color: #fff;
-      
-    }
-    .unique-components-blocktext:nth-child(2n+1) {
-      border: 1px solid #FD9222;
-      
-      color: #111111;
+    .components-blocktext:last-child{
+      margin-right: 0;
     }
     
-    /* .unique-components-back{
-      display: none;
-    } */
-    /* @media screen and (min-width: 375px) {
-    .unique-components-container{
-      max-width: 375px;
-      padding: 0 20px;
+    .components-blocktext:nth-child(2n+1){
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--light-font-color);
     }
-    } */
-    
-    /* @media screen and (max-width: 1199px) {
-    .unique-components-back{
-      display: none;
+
+    .components-blocktext:nth-child(even) {
+      border: 1px solid var(--accent-color);
+      color: var(--main-font-color);
     }
-    } */
-    
+
+    .components-benefitsdesc{
+      text-align: left;
+    }
     
     @media screen and (min-width: 768px) {
-      /* .unique-components-container{
-        max-width: 768px;
-        padding: 0 32px;
-      } */
-      .unique-components-title{
+      .components-title{
         width: 411px;
         margin: 0 auto 28px;
         font-size: 24px;
          line-height: 1.17;
       }
       
-      .unique-components-text{
+      .components-text{
         margin:0 auto 50px;
         width: 487px;
       }
-      .unique-components-list{
+
+      .components-list{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 32px;
       }
       
-     
-      .unique-components-item + .unique-components-item{
+      .components-item + .components-item{
         margin-top: 0;
       }
     }
     
     @media screen and (min-width: 1200px) {
-      
-  
-      .unique-components-container{
-        max-width: 1200px;
-      }
-  
-    .unique-components-list{
+    .components-list{
       flex-wrap: nowrap;
       gap: 19px;
     }
-    .unique-components-item{
+    .components-item{
       width: 270px;
     }
-  
-  
-  
-    
-  
-    /* .unique-components-front{
-      transform: perspective(600px) rotateY(0deg);
-    } */
-  
-   
-  
-  
-  
-  
-    /* 
-   
-    
-    
-     */
   }
-  
-  
-  
-  
-  
-  
-  
-    /* .unique-components-item{
-    animation-name: cardanimateLeft;
-      animation-duration: .5s;
-      animation-timing-function: linear;
-      animation-iteration-count: 1;
-    }
-    
-    .unique-components-item:nth-child(2n){
-      animation-name: cardanimateRight;}
-    
-      .unique-components-item:nth-child(2n+1){
-        animation-name: cardanimateLeft;}
-    
-    @keyframes cardanimateRight {
-      0% {
-        transform: translateX(200px);
-      }
-      40% {
-        transform: translateX(100px);
-      }
-      90% {
-        transform: translateX(0);
-      }
-      95% {
-        transform: translateX(5px);
-        
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-    
-    @keyframes cardanimateLeft {
-      0% {
-        transform: translateX(-200px);
-      }
-      50% {
-        transform: translateX(-100px);
-      }
-      90% {
-        transform: translateX(0);
-      }
-      95% {
-        transform: translateX(-5px);
-        
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-     */
