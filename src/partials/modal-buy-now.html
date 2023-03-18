@@ -1,7 +1,7 @@
-<div class="modal-buynow active" data-modal="modal-buy-now">
+<div class="modal modal-buynow" data-modal="modal-buy-now">
   <button class="modal-buynow-close" type="button">
-    <svg class="buynow-close" width="24" height="24">
-      <use href="../img/icons.svg#icon-modal-hero-close"></use>
+    <svg class="buynow-close js-modal-close" width="24" height="24">
+      <use href="../img/icons.svg#icon-close"></use>
     </svg>
   </button>
   <div class="buynow-counteiner">
@@ -204,13 +204,18 @@
         placeholder="Phone number"
       />
       <label class="label-buynow" for="card">Card number</label>
-      <input
-        class="input-buynow"
-        type="text"
-        name="card"
-        id="card"
-        placeholder="Enter card"
-      />
+      <div class="input-buynow-wrap">
+        <input
+          class="input-buynow"
+          type="text"
+          name="card"
+          id="card"
+          placeholder="Enter card"
+        />
+        <svg class="mcard-buynow" width="32" height="21">
+          <use href="../img/icons.svg#icon-master-card"></use>
+        </svg>
+      </div>
       <label class="label-buynow" for="com">Comment</label>
       <textarea
         class="input-buynow buynow-comment"
@@ -218,7 +223,14 @@
         id="com"
         placeholder="Enter text"
       ></textarea>
-      <button class="button submit-buynow" type="submit">Submit</button>
+      <button
+        class="button submit-buynow js-open-modal"
+        type="submit"
+        data-modal="modal-hero"
+      >
+        Submit
+      </button>
     </form>
   </div>
 </div>
+<div class="overlay js-overlay-modal"></div>
