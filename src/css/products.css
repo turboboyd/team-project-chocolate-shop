@@ -51,34 +51,10 @@
 }
 
 .products-grid .slick-dots {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     max-width: 210px;
-    margin: 0 auto;
-
 }
 
-.products-grid .slick-dots li {
-    list-style: none;
-}
 
-.products-grid .slick-dots li.slick-active button {
-    width: 28px;
-    height: 13px;
-    background: #FD9222;
-    border-radius: 40%;
-}
-
-.products-grid .slick-dots li button {
-    width: 13px;
-    height: 13px;
-    background: rgba(17, 17, 17, 0.1);
-    border-radius: 50%;
-    border: none;
-    font-size: 0;
-    cursor: pointer;
-}
 /* test */
 /* .products-wrapper{
     position: relative;
