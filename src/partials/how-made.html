@@ -1,29 +1,46 @@
-<section class="how-made-section section">
+<section class="how-made-section section" id="how-made">
   <div class="how-made-container container">
     <h2 class="how-made-title title">
       HOW IT'S <span class="title-accent-color">MADE?</span>
     </h2>
+
     <div class="how-made-box">
       <div class="how-made-video-box">
-        <iframe
-          class="how-made-video"
-          width="100%"
-          src="https://www.youtube-nocookie.com/embed/VXIsfa67PS8"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-        <!-- <picture>
-          <source
-            srcset="
-              ../img/how-made/mobile-poster.jpg    1x,
-              ../img/how-made/mobile-poster@2x.jpg 2x
-            "
-            media="(max-width: 767px)"
-          />
-          <img src="../img/how-made/mobile-poster.jpg"
-        </picture> -->
+        <div class="video-container">
+          <div class="poster-container">
+            <picture class="how-made-poster">
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ../img/how-made/desktop-poster.jpg,
+                  ../img/how-made/desktop-poster@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../img/how-made/tablet-poster.jpg,
+                  ../img/how-made/tablet-poster@2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ../img/how-made/mobile-poster.jpg,
+                  ../img/how-made/mobile-poster@2x.jpg 2x
+                "
+              />
+              <img src="mobile-poster.jpg" alt="Poster Image" />
+            </picture>
+          </div>
+          <iframe
+            class="how-made-video"
+            src="https://www.youtube-nocookie.com/embed/VXIsfa67PS8"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
       <div class="how-made-text-box">
         <p class="how-made-text">
