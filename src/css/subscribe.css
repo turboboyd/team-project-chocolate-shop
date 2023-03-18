@@ -1,40 +1,49 @@
-
-  .subscribe-container {
-    /* width: 100%; */
-    padding: 62px 20px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(../img/img-subscribe/Subcribe-mob.jpg );
-    background-repeat: no-repeat;
-    background-size: cover;
+.subscribe-container {
+  /* width: 100%; */
+  padding: 62px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/img-subscribe/Subcribe-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-sect-1 {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/img-subscribe/Subcribe-mob2x.jpg);
   }
-  .subscribe-title {
-      font-family: 'Montserrat';
+}
+.subscribe-title {
+  font-family: 'Montserrat';
   font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin: 0 17.5px;
-  }
-  .subscribe-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: #ffffff;
-  }
-  .subscribe-send {
-    margin: 0 auto;
-  }
-  .subscribe-icon {
-  }
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 17.5px;
+}
+.subscribe-text {
+ 
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.subscribe-send {
+  text-align: center;
+  margin: 0 auto;
+}
+.subscribe-icon {
+}
