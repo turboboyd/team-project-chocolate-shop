@@ -1,0 +1,38 @@
+/* Налаштування ТІЛЬКИ для мобільної версії і менше */
+@media screen and (width: 767px) {
+  .top-sellers-text {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+
+    letter-spacing: -0.02em;
+
+    color: var(--main-font-color, #111111);
+  }
+}
+/* Налаштування для ширини екрану з 375px до 767 */
+@media screen and (min-width: 375px) {
+  .top-sellers-item-none {
+    display: none;
+  }
+  .top-sellers-list {
+  }
+  .top-sellers-item {
+  }
+}
+/* Налаштування для ширини екрану з 768px до 1199 */
+@media screen and (min-width: 768px) {
+}
+
+/* Налаштування для ширини екрану від 1200 */
+@media screen and (min-width: 1200px) {
+  .top-sellers-item-none {
+    display: block;
+  }
+}
+
+.top-sellers-list {
+}
+.top-sellers-item {
+}
+.top-sellers-text {
+}

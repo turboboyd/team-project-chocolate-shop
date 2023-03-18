@@ -1,3 +1,6 @@
+/* .no-scroll {
+    overflow: hidden;
+} */
 .modal-hero {
     position: absolute;
     top: 50%;
@@ -11,6 +14,15 @@
     background-repeat: no-repeat;
     background-position: bottom 0 left 0;
 }
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .modal-hero {
+        background-image: url(../img/modal-hero/mod-chocolate-mob-2.png);
+    }
+}
+
 .modal-hero-title {
     margin-top: 42px;
     margin-left: 68px;
@@ -32,9 +44,7 @@
     color: #FCF1E0;
 }
 
-.modal-hero-close-icon{
-    stroke: var(--accent-color);
-}
+
 .is-hidden{
     opacity: 0;
 }
@@ -47,13 +57,22 @@
     margin-right: 14px;
     width: 28px;
     height: 28px;
-    background-color: #FCF1E0;
+    background-color: var(--light-modal-color);
+    color: var(--accent-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    cursor: pointer;    
-    
-}
+    cursor: pointer; 
 
+    transition-property: background-color;
+    transition: var(--transition);
+}
+.modal-hero-close-icon{
+    stroke: currentColor;
+}
+.modal-hero-close:is(:hover, :focus){
+    background-color: var(--accent-color);   
+    color: var(--light-modal-color); 
+}
 
 .modal-feedback {
     position: absolute;
@@ -68,7 +87,14 @@
     background-repeat: no-repeat;
     background-position: bottom 0 left 0;
 }
-
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .modal-feedback {
+        background-image: url(../img/modal-hero/mod-chocolate-mob-2.png);
+    }
+}
 .modal-feedback-close {
     display: flex;
     justify-content: center;
@@ -83,10 +109,17 @@
     border-radius: 50%;
     cursor: pointer;
     color: var(--accent-color);
+
+    transition-property: background-color;
+    transition: var(--transition);
 }
 
 .modal-feedback-close-icon{
-    stroke: var(--accent-color);
+    stroke:currentColor;
+}
+.modal-feedback-close:is(:hover, :focus){
+    background-color: var(--accent-color);
+    color: var(--light-modal-color);
 }
 
 .modal-feedback-title {
@@ -115,7 +148,15 @@
     .modal-hero{
         width: 516px;
         height: 414px;
-        background-image: url(../img/modal-hero/modal-chocolate-tabl-desk-1.png);
+        background-image: url(../img/modal-hero/modal-chocolate-tab-desk-1.png);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .modal-hero {
+            background-image: url(../img/modal-hero/modal-chocolate-tab-desk-2.png);
+        }
     }
     .modal-hero-title{
         margin-top: 90px;
@@ -132,7 +173,7 @@
     }
     .modal-hero-close {
         margin-top: 24px;
-        margin-right: 26px;
+        margin-right: 24px;
         width: 40px;
         height: 40px;
     }
@@ -140,14 +181,22 @@
     .modal-feedback {
         width: 516px;
         height: 414px;
-        background-image: url(../img/modal-hero/modal-chocolate-tabl-desk-1.png);
+        background-image: url(../img/modal-hero/modal-chocolate-tab-desk-1.png);
     }
-    
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .modal-feedback {
+            background-image: url(../img/modal-hero/modal-chocolate-tab-desk-2.png);
+        }
+    }
+
     .modal-feedback-close {
         margin-top: 24px;
         margin-right: 24px;
-        width: 38px;
-        height: 38px;
+        width: 40px;
+        height: 40px;
     }
     
     .modal-feedback-title {
