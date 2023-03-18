@@ -19,7 +19,7 @@
         background-image: url(../img/modal-hero/bar-chocolate-mob-2.jpg);
     }
 }
-.is-hidden {
+.modal-window {
     opacity: 0;
 }
 .modal-subscribe-close {
