@@ -10,7 +10,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../img/img-subscribe/Subcribe-mob.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
