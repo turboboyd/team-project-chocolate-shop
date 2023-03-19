@@ -10,6 +10,7 @@
 @import url('./variables.css');
 
 @import url('./general.css');
+@import url('./general-modal.css');
 
 @import url('./slider.css');
 
@@ -27,7 +28,6 @@
 @import url('./modal-reviews.css');
 @import url('./subscribe.css');
 @import url('./modal-subscribe.css');
-@import url('./general-modal.css');
 @import url('./footer.css');
 
 
