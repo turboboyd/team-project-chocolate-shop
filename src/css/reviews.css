@@ -1,13 +1,15 @@
 .section-review {
   text-align: center;
 }
-.review-list {
+.review-slider {
   margin-bottom: 32px;
+  width: 100%;
+  min-height: 285px;
 } 
 .review-wrap {
-  width: 335px;
+  width: 290px;
   position: relative;
-  
+  margin: 0 auto;
   height: 200px;
   background-color: var(--light-font-color);
   border: 1px solid var(--border-transparent-color);
@@ -38,7 +40,6 @@
   display: block;
 }
 .review-slider .slick-track{
-  width: 100%;
   display: flex;
   gap: 16px;  
   height: 242px;
@@ -58,9 +59,16 @@
   color: var(--light-font-color);
 }
 
+@media screen and (min-width: 375px) {
+  .review-wrap {
+    width: 335px;
+    margin: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .review-wrap {
     width: 344px;
+    
   }
   .review-list {
     margin-bottom: 50px;
