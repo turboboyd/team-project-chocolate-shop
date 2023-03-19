@@ -137,21 +137,6 @@
   letter-spacing: -0.02em;
 }
 
-.btn-modal-review {
-  padding: 12px 18px;
-  min-width: 93px;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  color: #ffffff;
-
-  background: #fd9222;
-  border-radius: 100px;
-  border: none;
-  cursor: pointer;
-}
 @media (max-height: 471px) {
   .modal-leave-review {
     height: 100%;
