@@ -147,7 +147,7 @@
     width: 458px;
     margin-left: 40px;
     margin-bottom: 40px;
-    margin-right: auto;
+    margin-right: 0;
     border:none;
 }
 
@@ -160,17 +160,19 @@
     padding-bottom: 15px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 30px;
-    background:#FAFAFA;;
+    background:#FAFAFA;
+    font-size: 18px;
+    line-height: 1.22;
 }
 .modal-subscribe-but {
-    width: 100px;
+    width: 137px;
     font-size: 14px;
     line-height: 1.21;
     border-radius: 100px;
     border: transparent;
     font-weight: 600;
-    padding: 14px 22px;
-    height: 45px;
+    padding: 16px 42px;
+    height: 52px;
     background-color: var(--accent-color);
     color: var(--light-font-color);
     margin-left: 8px;

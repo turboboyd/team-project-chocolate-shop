@@ -2,7 +2,7 @@
 .overlay {
     opacity: 0;
     visibility: hidden;
-  
+
 
     position: fixed;
     top: 0;
@@ -140,7 +140,7 @@
 
 .modal-feedback-title {
     margin-top: 42px;
-    margin-left: 68px;
+    margin-left: 58px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -151,7 +151,7 @@
 
 .modal-feedback-text {
     margin-top: 8px;
-    margin-left: 68px;
+    margin-left: 58px;
     width: 219px;
     font-style: normal;
     font-weight: 400;
