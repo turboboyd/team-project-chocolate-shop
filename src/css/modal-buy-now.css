@@ -1,38 +1,4 @@
-.overlay {
-  opacity: 0;
-  visibility: hidden;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 20;
-  transition: 0.3s all;
-}
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  opacity: 0;
-  visibility: hidden;
-  z-index: 100;
-
-  border-radius: 15px;
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-}
-
 .modal-buynow {
-  /* position: fixed; */
   min-width: 311px;
   height: 100%;
   top: 0;
@@ -117,20 +83,6 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
-.input-buynow {
-  margin-bottom: 18px;
-  padding: 14px 18px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(17 / 14);
-  letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
-  border-color: rgba(64, 64, 64, 0.3);
-  border-radius: 15px;
-  background-color: transparent;
-  width: 100%;
-}
-
 .buynow-comment {
   resize: none;
   height: 91px;
@@ -206,18 +158,9 @@
   .buynow-comment {
     height: 137px;
   }
-  .input-buynow {
-    padding: 22px 24px;
-    font-size: 18px;
-    line-height: calc(22 / 18);
-  }
-  .modal-buynow-close {
-    width: 24px;
-    height: 24px;
-  }
-  .buynow-close {
-    width: 28px;
-    height: 28px;
+  .label-buynow {
+    font-size: 14px;
+    line-height: calc(18 / 14);
   }
 }
 @media screen and (min-width: 1200px) {
