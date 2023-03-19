@@ -8,7 +8,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 20;
+  z-index: 100;
   transition: 0.3s all;
 }
 
@@ -29,6 +29,10 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+.modal-feedback.active .modal-leave-review {
+  display: none;
 }
 
 .modal-leave-review {
@@ -94,7 +98,7 @@
   outline: transparent;
 }
 
-.input-modal-leave-review:invalid{
+.input-modal-leave-review:not(:placeholder-shown):invalid {
   border-color: red;
 }
 
