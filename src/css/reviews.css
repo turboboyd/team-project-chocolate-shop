@@ -5,10 +5,9 @@
   margin-bottom: 32px;
 } 
 .review-wrap {
-  width: 100%;
-}
-.review-response{
-  width: 100%;
+  width: 335px;
+  position: relative;
+  
   height: 200px;
   background-color: var(--light-font-color);
   border: 1px solid var(--border-transparent-color);
@@ -17,8 +16,8 @@
   padding: 56px 18px 26px;
 }
 .reviewer-img {
-  position: relative;
-  top:40px;
+  position: absolute;
+  top:-40px;
   left:calc(50% - 40px);
 }
 .review-subtitle {
@@ -33,9 +32,6 @@
   letter-spacing: -0.02em;
   color: var(--main-font-color-transparent);
 }
-/* .review-slider .slick-slider{
-  height: 275px;
-} */
 .review-slider .slick-list{
   margin-bottom: 20px;
   overflow: hidden;
@@ -45,28 +41,12 @@
   width: 100%;
   display: flex;
   gap: 16px;  
+  height: 242px;
+  align-items: flex-end;
 }
 .review-slider .slick-dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 13px;
-  height: 13px;
+ width: 106px;
 }
-.review-slider .slick-dots button {
-  height: 13px;
-  width: 13px;
-  background-color: var(--border-transparent-color);
-  font-size: 0;
-  border-radius: 50%;
-  border: none;
-}
-.review-slider .slick-dots .slick-active button {
-  width: 28px;
-  background-color: var(--accent-color);
-  border-radius: 40%;
-  height: 13px;
-} 
 .review-btn {
   background-color: transparent;
   border: 1px solid var(--accent-color);
@@ -79,20 +59,17 @@
 }
 
 @media screen and (min-width: 768px) {
+  .review-wrap {
+    width: 344px;
+  }
   .review-list {
     margin-bottom: 50px;
-  }   
-  .review-item {
-    width: calc((100% - 30px - 16px) / 2);
-  }
-  .review-response {
-    padding: 56px 16px 26px;
-  }
+  } 
   .review-slider .slick-list{
     margin-bottom: 32px;
   }
-  .review-slider .slick-track {
-    gap: 16px;
+  .review-response {
+    padding: 56px 16px 26px;
   }
   .review-btn {
     height: 50px;
@@ -101,13 +78,13 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .review-item {
-    width: calc((100% - 30px - 2 * 28px) / 3);
+  .review-wrap {
+    width: 360px;
+  }
+  .review-slider .slick-track{
+    gap: 28px;  
   }
   .review-response {
     padding: 56px 24px 26px;
-  }
-  .review-slider .slick-track {
-    gap: 28px;
   }
 }

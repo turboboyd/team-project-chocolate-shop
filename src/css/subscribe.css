@@ -10,7 +10,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../img/img-subscribe/Subcribe-mob.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -52,6 +52,7 @@
 @media screen and (min-width: 768px)
  {
 .subscribe-container {
+  padding: 72px 151px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
   url(../img/img-subscribe/Subcribe-tab.jpg); }
   @media (min-device-pixel-ratio: 2),
@@ -65,10 +66,15 @@
       url(../img/img-subscribe/Subcribe-tab2x.jpg);
   }
 }
+.subscribe-title {
+  margin: 0 44.5px;
+  font-size: 24px;
+}
 }
 @media screen and (min-width: 1200px)
  {
 .subscribe-container {
+  padding: 72px 367px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
   url(../img/img-subscribe/Subcribe-desk.jpg); }
   @media (min-device-pixel-ratio: 2),
@@ -81,5 +87,9 @@
       ),
       url(../img/img-subscribe/Subcribe-desk2x.jpg);
   }
+}
+.subscribe-title {
+  margin: 0 44.5px;
+  font-size: 24px;
 }
 }
