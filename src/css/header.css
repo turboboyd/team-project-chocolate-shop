@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
 
-  background-color: var(--main-bgr-color);
+  background-color: var(--modal-btn-bgr-color);
 }
 
 .header-wrap {
@@ -40,21 +40,18 @@
   display: none;
 }
 
-/* .header-btn-wrap {
-  padding-top: 20px;
-  padding-bottom: 14px;
-} */
-
 .header-menu-open-btn {
   display: block;
+  width: 28px;
+  height: 28px;
   padding: 0;
   border: none;
   background-color: transparent;
 }
 
 .header-menu-open-icon {
-  width: 28px;
-  height: 28px;
+  width: 100%;
+  height: 100%;
   stroke: var(--main-font-color);
 }
 
@@ -93,23 +90,29 @@
 .header-menu-close-btn {
   display: block;
   margin-bottom: 88px;
+  width: 28px;
+  height: 28px;
   margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-close-icon {
-  width: 28px;
-  height: 28px;
+  width: 100%;
+  height: 100%;
 
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
   stroke: var(--light-font-color);
 }
 
-.header-menu-close-btn:is(:hover, :focus) .header-menu-close-icon {
+.header-menu-close-btn:is(:hover, :focus) {
   width: 40px;
   height: 40px;
+}
+
+.header-menu-close-btn:is(:hover, :focus) .header-menu-close-icon {
   stroke: var(--accent-color);
 }
 
@@ -159,14 +162,17 @@
   gap: 18px;
 }
 
+.header-menu-soc-link {
+  display: flex;
+  align-items: flex-end;
+  width: 22px;
+  height: 22px;
+}
+
 .header-menu-soc-icon {
   transition: stroke var(--transition);
   stroke: var(--light-font-color);
   fill: transparent;
-}
-
-.header-menu-soc-link {
-  display: block;
 }
 
 .header-menu-soc-link:is(:hover, :focus) .header-menu-soc-icon {
@@ -181,8 +187,7 @@
     padding-bottom: 24px;
   }
 
-  .header-menu-open-icon {
-    display: block;
+  .header-menu-open-btn {
     width: 32px;
     height: 32px;
   }
@@ -192,10 +197,13 @@
     padding-right: 32px;
     padding-left: 32px;
   }
-
-  .header-menu-soc-icon {
+  .header-menu-soc-link {
     width: 32px;
     height: 32px;
+  }
+  .header-menu-soc-icon {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -207,9 +215,6 @@
     padding: 0;
   }
 
-  /* .header-wrap {
-    justify-content: unset;
-  } */
   .header-logo-link {
     margin-right: 188px;
     padding-top: 24px;
@@ -280,18 +285,22 @@
     gap: 18px;
   }
 
-  .header-soc-link {
-    display: block;
+  .header-soc-item {
     padding-top: 24px;
     padding-bottom: 32px;
   }
-  .header-soc-icon {
+
+  .header-soc-link {
     display: block;
+
     width: 24px;
     height: 24px;
   }
 
   .header-soc-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
     transition: stroke var(--transition);
     stroke: var(--main-font-color);
     fill: transparent;
