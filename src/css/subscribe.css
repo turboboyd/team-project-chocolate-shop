@@ -28,7 +28,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 1,2;
+  line-height: 1, 2;
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -36,61 +36,56 @@
   margin: 0 17.5px;
 }
 .subscribe-text {
- 
   text-align: center;
   letter-spacing: -0.02em;
   color: #ffffff;
 }
-.subscribe-send {
-  /* text-align: center;
-  margin: 0 auto; */
-  border: none;
-}
+
 .sub-but-text {
-  margin: 12px auto ;
+  margin: 12px auto;
 }
-@media screen and (min-width: 768px)
- {
-.subscribe-container {
-  padding: 72px 151px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-  url(../img/img-subscribe/Subcribe-tab.jpg); }
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) {
   .subscribe-container {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../img/img-subscribe/Subcribe-tab2x.jpg);
+    padding: 72px 151px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../img/img-subscribe/Subcribe-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-container {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/img-subscribe/Subcribe-tab2x.jpg);
+    }
+  }
+  .subscribe-title {
+    margin: 0 44.5px;
+    font-size: 24px;
+    line-height: 1, 17;
   }
 }
-.subscribe-title {
-  margin: 0 44.5px;
-  font-size: 24px;
-  line-height: 1,17;
-}
-}
-@media screen and (min-width: 1200px)
- {
-.subscribe-container {
-  padding: 72px 367px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-  url(../img/img-subscribe/Subcribe-desk.jpg); }
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) {
   .subscribe-container {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../img/img-subscribe/Subcribe-desk2x.jpg);
+    padding: 72px 367px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../img/img-subscribe/Subcribe-desk.jpg);
   }
-}
-.subscribe-title {
-  margin: 0 44.5px;
-  font-size: 24px;
-}
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-container {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/img-subscribe/Subcribe-desk2x.jpg);
+    }
+  }
+  .subscribe-title {
+    margin: 0 44.5px;
+    font-size: 24px;
+  }
 }
