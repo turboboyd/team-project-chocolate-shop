@@ -1,4 +1,4 @@
-.overlay {
+/* .overlay {
     opacity: 0;
     visibility: hidden;
     
@@ -11,7 +11,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 20;
     transition: all var(--transition);
-}
+} */
 .modal-subscribe {
     position: fixed;
     top: 50%;
@@ -34,7 +34,7 @@
         background-image: url(../img/modal-hero/bar-chocolate-mob-2.jpg);
     }
 }
-.modal {
+/* .modal {
     opacity: 0;
     visibility: hidden;    
     
@@ -46,7 +46,7 @@
 .modal.active, .overlay.active{
     opacity: 1;
     visibility: visible;
-}
+} */
 .modal-subscribe-close {
     display: flex;
     display: block;
