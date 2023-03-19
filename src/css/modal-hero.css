@@ -1,5 +1,5 @@
 
-.overlay {
+/* .overlay {
     opacity: 0;
     visibility: hidden;
 
@@ -12,9 +12,13 @@
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.3s all;
 }
+.overlay.active{
+    z-index: 101;
+} */
+
 
 .modal-hero {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -26,12 +30,16 @@
     background-repeat: no-repeat;
     background-position: bottom 0 left 0;
 }
+/* .modal {
+    opacity: 0;
+    visibility: hidden;
+}
 .modal.active,
 .overlay.active {
     opacity: 1;
     visibility: visible;
     
-}
+} */
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -91,7 +99,7 @@
 }
 
 .modal-feedback {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -159,11 +167,11 @@
     line-height: 1.14;
     color: #FCF1E0;
 }
-.modal {
+/* .modal {
     opacity: 0;
     visibility: hidden;
     z-index: 20;
-}
+} */
 @media screen and (min-width: 768px){
     .modal-hero{
         width: 516px;

@@ -1,17 +1,3 @@
-.overlay {
-    opacity: 0;
-    visibility: hidden;
-    
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 20;
-    transition: all var(--transition);
-}
 .modal-subscribe {
     position: fixed;
     top: 50%;
@@ -33,17 +19,6 @@
     .modal-subscribe{
         background-image: url(../img/modal-hero/bar-chocolate-mob-2.jpg);
     }
-}
-.modal {
-    opacity: 0;
-    visibility: hidden;    
-    z-index: 20;
-}
-
-.modal.active, .overlay.active{
-    opacity: 1;
-    visibility: visible;
-    z-index: 30;
 }
 .modal-subscribe-close {
     display: flex;
@@ -120,6 +95,7 @@
     border: 0;
     color: rgba(64, 64, 64, 0.3);
 }
+/* MEDIA 768 */
 
 @media screen and (min-width: 768px){
 .modal-subscribe {
