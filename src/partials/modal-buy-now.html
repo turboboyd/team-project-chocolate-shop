@@ -178,6 +178,9 @@
           name="name"
           id="name"
           placeholder="Name"
+          required
+          pattern=".{1,20}"
+          title="The number of characters should not exceed 20"
         />
         <input
           class="input-buynow"
@@ -185,6 +188,9 @@
           name="name"
           id="name"
           placeholder="Surname"
+          required
+          pattern=".{1,20}"
+          title="The number of characters should not exceed 20"
         />
       </div>
       <label class="label-buynow" for="email">Email</label>
@@ -195,6 +201,10 @@
           name="email"
           id="email"
           placeholder="Enter your email"
+          required
+          pattern=".{10,40}"
+          title="The number of characters should not be less than 10 and should not exceed 40"
+        />
         />
       </div>
       <label class="label-buynow" for="phone">Phone number</label>
@@ -205,6 +215,10 @@
           name="phone"
           id="phone"
           placeholder="Phone number"
+          required
+          pattern="^\+[0-9]{12}$"
+          title="Number of digits should not be 12"
+        />
         />
       </div>
       <label class="label-buynow" for="card">Card number</label>
@@ -215,6 +229,8 @@
           name="card"
           id="card"
           placeholder="Enter card"
+          required
+          pattern="{.16,16}"
         />
         <svg class="mcard-buynow" width="32" height="21">
           <use href="../img/icons.svg#icon-master-card"></use>
@@ -227,6 +243,9 @@
           name="comment"
           id="com"
           placeholder="Enter text"
+          required
+          pattern="^[a-zA-Z]{5,500}"
+          title="The number of characters should not be less than 5 and should not exceed 500"
         ></textarea>
       </div>
       <button
