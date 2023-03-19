@@ -1,6 +1,7 @@
 .overlay {
     opacity: 0;
     visibility: hidden;
+    z-index: 10;
 
     position: fixed;
     top: 0;
@@ -36,13 +37,13 @@
 .modal {
     opacity: 0;
     visibility: hidden;    
-    /* z-index: 20; */
+    z-index: 20;
 }
 
 .modal.active, .overlay.active{
     opacity: 1;
     visibility: visible;
-    /* z-index: 30; */
+    z-index: 30;
 }
 .modal-subscribe-close {
     display: flex;
