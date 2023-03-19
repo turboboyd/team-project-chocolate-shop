@@ -2,7 +2,8 @@ $(document).ready(function(){
 $('.review-slider').slick({
     arrows:false,
     dots:true,
-    slidesToShow:2
-    
+    variableWidth: true,
+    speed:1000,
+    infinite:false    
 });
 })
