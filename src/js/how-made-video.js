@@ -7,6 +7,14 @@
   refs.pushPlay.addEventListener('click', togglePoster);
 
   function togglePoster() {
-    refs.hide.classList.toggle('how-made-is-hidden');
+    const hideEl = document.querySelector('[data-how-made-hide]');
+    hideEl.classList.add('how-made-is-hidden');
+
+    const videoEl = document.querySelector('.how-made-video');
+    const videoSrc = videoEl.getAttribute('src');
+    videoEl.setAttribute(
+      'src',
+      videoSrc + '?autoplay=1&mute=0&rel=0&showinfo=0'
+    );
   }
 })();

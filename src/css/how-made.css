@@ -80,6 +80,7 @@
 }
 
 .how-made-play-icon {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -151,6 +152,9 @@
   }
   .how-made-text-box {
     padding: 32px 102px 32px 32px;
+  }
+  .how-made-text {
+    margin-bottom: 28px;
   }
 }
 
