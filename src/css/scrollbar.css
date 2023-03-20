@@ -3,7 +3,6 @@
     scrollbar-width: 5px;
     scrollbar-color: var(--light-modal-color) var(--light-font-color);
   }
-  
     /*  Chrome, Edge, Safari */
     *::-webkit-scrollbar {
       width: 7px;
