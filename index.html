@@ -21,7 +21,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script type="module" crossorigin src="/team-project-chocolate-shop/assets/index-d43b8c96.js"></script>
-    <link rel="stylesheet" href="/team-project-chocolate-shop/assets/index-49a8802d.css">
+    <link rel="stylesheet" href="/team-project-chocolate-shop/assets/index-df7a0031.css">
   </head>
   <body>
     <header class="header">
@@ -360,7 +360,11 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <div class="poster-container">
+          <div
+            class="poster-container"
+            data-how-made-push-play
+            data-how-made-hide
+          >
             <picture class="how-made-poster">
               <source
                 media="(min-width: 1200px)"
@@ -375,6 +379,9 @@
                 srcset="/team-project-chocolate-shop/assets/mobile-poster-48747308.jpg , /team-project-chocolate-shop/assets/mobile-poster@2x-c945a8ca.jpg 2x"
               />
               <img src="mobile-poster.jpg" alt="Poster Image" />
+              <svg class="how-made-play-icon" width="44px" height="44px">
+                <use href="/team-project-chocolate-shop/assets/icons-618f7dbf.svg#icon-video-play"></use>
+              </svg>
             </picture>
           </div>
         </div>
