@@ -31,12 +31,6 @@
   color: var(--accent-color);
 }
 
-.modal-review-form {
-}
-
-.modal-review-form-field {
-  margin-bottom: 14px;
-}
 .modal-review-message-form-field {
   margin-bottom: 18px;
 }
@@ -66,14 +60,18 @@
   font-weight: 500;
 }
 
-.modal-review-message {
-  height: 91px;
-}
-
 .modal-review-text-input {
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: -0.02em;
+
+  margin-bottom: 14px;
+}
+
+.modal-review-message {
+  height: 91px;
+  margin-top: 14px;
+  margin-bottom: 18px;
 }
 
 @media screen and (max-width: 310px) {
@@ -117,13 +115,11 @@
     display: none;
   }
 
-  .modal-review-form-field {
-    margin-bottom: 19px;
-  }
-
   .modal-review-text-input {
     font-size: 18px;
     line-height: 1.22;
+
+    margin-bottom: 19px;
   }
 
   .iti__selected-flag {
