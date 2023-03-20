@@ -1,14 +1,11 @@
 .modal-review {
   width: 311px;
-  height: 471px;
+  min-height: 471px;
   z-index: 100;
 
   background-color: var(--modal-btn-bgr-color);
 }
 
-.modal-review-btn-wrap {
-  display: flex;
-}
 .modal-review-btn-close {
   position: absolute;
   right: 14px;
@@ -22,11 +19,10 @@
   stroke: var(--main-font-color);
 }
 .modal-review-container {
-  padding: 0 24px;
+  padding: 32px 24px;
 }
 
 .modal-review-title {
-  margin-top: 32px;
   color: var(--main-font-color);
   text-align: left;
 }
@@ -36,7 +32,6 @@
 }
 
 .modal-review-form {
-  padding-bottom: 32px;
 }
 
 .modal-review-form-field {
@@ -89,7 +84,7 @@
 
 @media (max-height: 472px) {
   .modal-review {
-    height: 472px;
+    min-height: 0;
     height: 100%;
     overflow: auto;
   }
@@ -98,10 +93,10 @@
 @media screen and (min-width: 768px) {
   .modal-review {
     width: 517px;
-    height: 631px;
+    min-height: 631px;
   }
   .modal-review-container {
-    padding: 0 40px;
+    padding: 40px;
   }
 
   .modal-review-btn-close {
@@ -114,7 +109,6 @@
   }
 
   .modal-review-title {
-    margin-top: 40px;
     margin-bottom: 40px;
     width: 300px;
   }
@@ -145,6 +139,7 @@
   }
   @media (max-height: 631px) {
     .modal-review {
+      min-height: 0;
       height: 100%;
       overflow: auto;
     }
