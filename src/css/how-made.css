@@ -153,6 +153,9 @@
   .how-made-text-box {
     padding: 32px 102px 32px 32px;
   }
+  .how-made-text {
+    margin-bottom: 28px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
