@@ -1,5 +1,9 @@
 .subscribe-section {
-  max-width: 375px;
+  
+}
+.subscribe-container {
+text-align: center;
+max-width: 375px;
   padding: 62px 20px;
     margin: 0 auto;
     background: 
@@ -7,13 +11,10 @@
     background-repeat: no-repeat;
   background-size: cover;
 }
-.subscribe-container {
-text-align: center;
-}
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .subscribe-section {
+  .subscribe-container {
     background-image:
       url(../img/img-subscribe/Subcribe-mob2x.jpg), linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -44,8 +45,8 @@ margin: 12px auto ;
 }
 @media screen and (min-width: 768px)
  {
-.subscribe-section {
-  min-width: 768px;
+.subscribe-container {
+  max-width: 768px;
   padding: 72px 151px;
   background: url(../img/img-subscribe/Subcribe-tab.jpg), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   background-size: cover;
@@ -54,7 +55,7 @@ margin: 12px auto ;
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .subscribe-section {
+  .subscribe-container {
     background-image: url(../img/img-subscribe/Subcribe-tab2x.jpg), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));;
   }
 }
@@ -66,8 +67,8 @@ margin: 12px auto ;
 }
 @media screen and (min-width: 1200px)
  {
-.subscribe-section {
-  min-width: 1200px;
+.subscribe-container {
+  max-width: 1200px;
   padding: 72px 367px;
   background: url(../img/img-subscribe/Subcribe-desk.jpg), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); 
   background-size: cover;
@@ -75,7 +76,7 @@ margin: 12px auto ;
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .subscribe-section {
+  .subscribe-container {
     background-image: url(../img/img-subscribe/Subcribe-desk2x.jpg), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));;
   }
 }
