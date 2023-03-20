@@ -35,6 +35,11 @@
   height: 21px;
 }
 
+.header-logo-link:hover .header-logo-icon {
+  transform: rotateY(720deg);
+  transition: transform 800ms ease-in-out;
+}
+
 .header-nav-list,
 .header-soc-list {
   display: none;
