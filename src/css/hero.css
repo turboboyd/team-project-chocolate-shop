@@ -54,8 +54,7 @@
 .hero-btns {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px 10px;
-  justify-content: space-between;
+  gap: 14px 14px;
   align-items: center;
   margin-bottom: 32px;
 }
@@ -91,7 +90,9 @@
   gap: 14px;
   cursor: pointer;
   align-items:center;
-  max-width: 110px;
+  max-width: 120px;
+  background-color:transparent;
+  border:none;
 }
 
 .hero-scroll-icon {
@@ -103,13 +104,13 @@
   transition:  var(--transition);
 }
 
-a:hover .hero-scroll-text,
-a:focus .hero-scroll-text {
+button:hover .hero-scroll-text,
+button:focus .hero-scroll-text {
     color: var(--accent-color)
 }
 
- a:hover .hero-scroll-icon,
- a:focus .hero-scroll-icon {
+ button:hover .hero-scroll-icon,
+ button:focus .hero-scroll-icon {
   background-color:var(--accent-color);
   fill: var(--light-font-color);
 }
@@ -134,7 +135,6 @@ a:focus .hero-scroll-text {
 
   .hero-btns {
     gap: 14px;
-    justify-content: unset;
     margin-bottom: 0;
   }
 
