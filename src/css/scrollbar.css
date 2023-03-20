@@ -6,11 +6,13 @@
   
     /*  Chrome, Edge, Safari */
     *::-webkit-scrollbar {
-      width: 5px;
+      width: 7px;
     }
     
     *::-webkit-scrollbar-track {
       background: var(--light-font-color);
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     *::-webkit-scrollbar-thumb {
       background-color: var(--light-modal-color);
