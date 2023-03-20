@@ -1,4 +1,4 @@
-.hero-box {
+.hero-container {
   background-color: var(--advantages-bgr-color);
   padding: 395px 20px 20px 20px;
   background-image: linear-gradient(rgba(46, 47, 66, 0), rgba(46, 47, 66, 0)),
@@ -167,7 +167,7 @@ button:focus .hero-scroll-text {
 @media screen and (min-width: 1200px) {
  
 
-  .hero-box {
+  .hero-container {
     padding: 381px 40px 40px 40px;
     background-image: linear-gradient(rgba(46, 47, 66, 0), rgba(46, 47, 66, 0)),
       url('../img/hero/chocolate-covered-desktop-1x.jpg');
