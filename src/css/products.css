@@ -1,9 +1,15 @@
+.products-section{
+    overflow: hidden;
+}
+
 .products-card {
+    max-width: 335px;
     background: #FFFFFF;
-    border: 1px solid rgba(17, 17, 17, 0.1);
+    border: 1px solid var(--border-transparent-color);
     border-radius: 15px;
     padding: 32px 52px;
     text-align: center;
+    overflow: hidden;
 }
 
 .products-card img {
@@ -16,7 +22,6 @@
     line-height: 1.33;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: #111111;
     margin-bottom: 2px;
 }
 
@@ -24,103 +29,50 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: -0.02em;
-    color: rgba(17, 17, 17, 0.7);
+    color: var(--main-font-color-transparent);
     margin-bottom: 18px;
 }
 
 .products-btn {
-    min-width: 94px;
-    min-height: 33px;
-    background: #FAFAFA;
-    border: 1px solid rgba(17, 17, 17, 0.1);
+    padding: 8px 20px;
+    background: var(--modal-btn-bgr-color);
+    border: 1px solid var(--border-transparent-color);
     border-radius: 100px;
     font-weight: 600;
-    font-size: 14px;
     line-height: 1.21;
-    color: #111111;
 }
 
-.products-grid .slick-list {
-    overflow: hidden;
+.products-slider{
+    max-width: 100%;
+    min-height: 409px;
+}
+
+.products-slider .slick-list {
+    width: 100%;
     margin-bottom: 20px;
+    overflow: hidden;
 }
-
-.products-grid .slick-track {
+.products-slider .slick-track{
     display: flex;
-    gap: 20px;
+    gap: 18px;
 }
 
 .products-grid .slick-dots {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     max-width: 210px;
-    margin: 0 auto;
-
 }
 
-.products-grid .slick-dots li {
-    list-style: none;
-}
-
-.products-grid .slick-dots li.slick-active button {
-    width: 28px;
-    height: 13px;
-    background: #FD9222;
-    border-radius: 40%;
-}
-
-.products-grid .slick-dots li button {
-    width: 13px;
-    height: 13px;
-    background: rgba(17, 17, 17, 0.1);
-    border-radius: 50%;
-    border: none;
-    font-size: 0;
-    cursor: pointer;
-}
-/* test */
-/* .products-wrapper{
-    position: relative;
-    width: 100vh;
-    height: 409px;
-}
-
-
-@media screen and (max-width: 11199px) {
-    .products-grid {
-            position: absolute;
-    }
-} */
- 
-
-@media screen and (min-width: 375px) {
-    .products-card {
-        width: 335px;
-    }
-
-}
 
 @media screen and (min-width: 768px) {
+    .products-slider .slick-list {
+    width: 1136px;
+    margin-bottom: 32px;
+    }
     .products-card {
         width: 270px;
         padding: 32px 20px;
     }
-    .products-grid .slick-list {
-        margin-bottom: 32px;
-    }
 
-    .products-grid .slick-track {
-        gap: 18px;
-    }
 }
 
-@media screen and (min-width: 1200px) {
-    .products-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px 18px;
-    }
-}
-
-
+/* @media screen and (min-width: 1200px) {
+} */

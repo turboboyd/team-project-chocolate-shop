@@ -1,6 +1,6 @@
 <!-- --------------SECTION TOP-SELLERS------------------------------------------------------ -->
 
-<section class="section">
+<section class="section" id="top-sellers">
   <div class="container">
     <h2 class="title"><span class="title-brand-color">Top</span> Sellers</h2>
     <ul class="top-sellers-list">
@@ -8,33 +8,36 @@
         <picture>
           <source
             srcset="
-              ../img/top-sellers/1img1x-desc-min.jpg 1x,
-              ../img/top-sellers/1img2x-desc-min.jpg 2x
+              ./img/top-sellers/1img1x-desc.jpg 1x,
+              ./img/top-sellers/1img2x-desc.jpg 2x
             "
             media="(min-width : 1200px) "
+            class="top-sellers-img"
           />
           <source
             srcset="
-              ../img/top-sellers/1img1x-tab-min.jpg 1x,
-              ../img/top-sellers/1img2x-tab-min.jpg 2x
+              ./img/top-sellers/1img1x-tab.jpg 1x,
+              ./img/top-sellers/1img2x-tab.jpg 2x
             "
             media="(min-width : 768px) "
+            class="top-sellers-img"
           />
           <source
             srcset="
-              ../img/top-sellers/1img1x-mob-min.jpg 1x,
-              ../img/top-sellers/1img2x-mob-min.jpg 2x
+              ./img/top-sellers/1img1x-mob.jpg 1x,
+              ./img/top-sellers/1img2x-mob.jpg 2x
             "
             media="(min-width : 375px) "
+            class="top-sellers-img"
           />
           <img
-            src="../img/top-sellers/1img1x-desc-min.jpg"
+            src="./img/top-sellers/1img1x-desc.jpg"
             alt="coffe"
             width="368px"
             height="464px"
+            class="top-sellers-img"
           />
         </picture>
-
         <p class="top-sellers-text">
           Crazy enough chocolate originates from a bean just like the coffee
           bean called Cacao. Cacao has been around for thousands of years and
@@ -45,30 +48,34 @@
         <picture>
           <source
             srcset="
-              ../img/top-sellers/2img1x-desc-min.jpg 1x,
-              ../img/top-sellers/2img2x-desc-min.jpg 2x
+              ./img/top-sellers/2img1x-desc.jpg 1x,
+              ./img/top-sellers/2img2x-desc.jpg 2x
             "
             media="(min-width : 1200px) "
+            class="top-sellers-img"
           />
           <source
             srcset="
-              ../img/top-sellers/2img1x-tab-min.jpg 1x,
-              ../img/top-sellers/2img2x-tab-min.jpg 2x
+              ./img/top-sellers/2img1x-tab.jpg 1x,
+              ./img/top-sellers/2img2x-tab.jpg 2x
             "
             media="(min-width : 768px) "
+            class="top-sellers-img"
           />
           <source
             srcset="
-              ../img/top-sellers/2img1x-mob-min.jpg 1x,
-              ../img/top-sellers/2img2x-mob-min.jpg 2x
+              ./img/top-sellers/2img1x-mob.jpg 1x,
+              ./img/top-sellers/2img2x-mob.jpg 2x
             "
             media="(min-width : 375px) "
+            class="top-sellers-img"
           />
           <img
-            src="../img/top-sellers/2img1x-desc-min.jpg"
+            src="./img/top-sellers/2img1x-desc.jpg"
             alt="chocolate"
             width="368px"
             height="464px"
+            class="top-sellers-img"
           />
         </picture>
       </li>
@@ -76,22 +83,36 @@
         <picture>
           <source
             srcset="
-              ../img/top-sellers/3img1x-desc-min.jpg 1x,
-              ../img/top-sellers/3img2x-desc-min.jpg 2x
+              ./img/top-sellers/3img1x-desc.jpg 1x,
+              ./img/top-sellers/3img2x-desc.jpg 2x
             "
             media="(min-width : 1200px) "
+            class="top-sellers-img"
           />
-
           <img
-            src="../img/top-sellers/3img1x-desc-min.jpg"
+            src="./img/top-sellers/3img1x-desc.jpg"
             alt="chocolate-bar"
             width="368px"
             height="464px"
+            class="top-sellers-img"
           />
         </picture>
       </li>
     </ul>
-    <button type="button">Buy now</button>
+    <div class="top-sellers-button-wrap">
+      <p class="top-sellers-button-text">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
+      </p>
+      <button
+        type="button top-sellers-button "
+        class="js-open-modal button"
+        data-modal="modal-buy-now"
+      >
+        Buy now
+      </button>
+    </div>
   </div>
 </section>
 <!-- --------------SECTION TOP-SELLERS------------------------------------------------------ -->

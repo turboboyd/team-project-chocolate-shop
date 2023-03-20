@@ -1,5 +1,6 @@
 /* Налаштування ТІЛЬКИ для мобільної версії і менше */
-@media screen and (width: 767px) {
+
+@media screen and (max-width: 767px) {
   .top-sellers-text {
     font-size: 14px;
     line-height: calc(18 / 14);
@@ -8,31 +9,86 @@
 
     color: var(--main-font-color, #111111);
   }
-}
-/* Налаштування для ширини екрану з 375px до 767 */
-@media screen and (min-width: 375px) {
   .top-sellers-item-none {
     display: none;
   }
   .top-sellers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
   }
-  .top-sellers-item {
+  .top-sellers-text {
+    margin-top: 20px;
   }
+  .top-sellers-button-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .top-sellers-button-text {
+    display: none;
+  }
+  .top-sellers-img {
+    border-radius: 15px;
+  }
+}
+/* Налаштування для ширини екрану з 375px до 767 */
+@media screen and (min-width: 375px) {
 }
 /* Налаштування для ширини екрану з 768px до 1199 */
 @media screen and (min-width: 768px) {
+  .top-sellers-list {
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+  .top-sellers-item {
+    flex-basis: calc((100%-16px) / 2);
+  }
+
+  .top-sellers-item-none {
+    display: none;
+  }
+  .top-sellers-text {
+    display: none;
+  }
+
+  .top-sellers-button {
+    position: absolute;
+  }
+  .top-sellers-button-wrap {
+    display: flex;
+    justify-content: right;
+  }
+  .top-sellers-button-text {
+    margin-right: auto;
+    width: 306px;
+  }
+  .top-sellers-img {
+    border-radius: 15px;
+  }
 }
 
 /* Налаштування для ширини екрану від 1200 */
 @media screen and (min-width: 1200px) {
+  .top-sellers-button-wrap {
+    display: flex;
+    justify-content: right;
+  }
   .top-sellers-item-none {
     display: block;
   }
-}
-
-.top-sellers-list {
-}
-.top-sellers-item {
-}
-.top-sellers-text {
+  .top-sellers-button-text {
+    margin-right: auto;
+    width: 407px;
+    display: block;
+  }
+  .top-sellers-text {
+    display: none;
+  }
 }
