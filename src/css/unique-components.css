@@ -1,14 +1,6 @@
-/* для .components-title видалити загальні налаштування,
-   бо ці налаштування вже є в general.css та додати індивідуальний 
-   відступ вниз, бо він відрізняється від усіх інших, та 
-   за допомогою бокових падингів обмежити ширину блоку з заголовком
-   */
    .components-title {
-    /* font-size: 20px;
-      line-height: 1.2; */
-    margin-bottom: 24px;
-    padding-left: 26px;
-    padding-right: 26px;
+    max-width: 283px;
+    margin: 0 auto 24px;
   }
   
   .components-text,
@@ -65,9 +57,7 @@
     margin: 0 auto 25px;
   }
   
-  /* .components-cardname наслідує розмір шрифту від налаштувань
-       за замовчуванням. треба задати font-size: 14px */
-  .components-cardname {
+ .components-cardname {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.29;
@@ -121,7 +111,7 @@
     line-height: 1.2;
     margin-right: 6px;
     border-radius: 35px;
-    border: 1px solid var(--accent-color); /* на мій погляд треба для помаранчевої фішки також задавати бордер, бо без нього вона виглядає меншою*/
+    border: 1px solid var(--accent-color);
   }
   .components-block-last .components-blocktext {
     padding: 6px 13px;
@@ -133,12 +123,10 @@
   
   .components-blocktext:nth-child(2n + 1) {
     background-color: var(--accent-color);
-    border-color: var(--accent-color);
     color: var(--light-font-color);
   }
   
   .components-blocktext:nth-child(even) {
-    border: 1px solid var(--accent-color);
     color: var(--main-font-color);
   }
   
@@ -148,11 +136,8 @@
   
   @media screen and (min-width: 768px) {
     .components-title {
-      width: 411px;
+      max-width: 411px;
       margin: 0 auto 28px;
-      /* font-size: 24px; font-size та line-height видалити. це наслідується від класу .title */
-      /* line-height: 1.17; */
-      padding: 0;
     }
   
     .components-text {
