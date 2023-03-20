@@ -35,17 +35,12 @@
 }
 
 .products-btn {
-  min-width: 94px;
-  min-height: 33px;
-  /* заменил цвет на переменную */
+  padding: 8px 20px;
   background: var(--modal-btn-bgr-color);
   border: 1px solid var(--border-transparent-color);
   border-radius: 100px;
   font-weight: 600;
   line-height: 1.21;
-
-  /* добавил паддинги как по макету */
-  padding: 8px 20px;
 }
 
 .products-slider {
@@ -78,10 +73,5 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .products-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px 18px;
-  }
-}
+/* @media screen and (min-width: 1200px) {
+} */
