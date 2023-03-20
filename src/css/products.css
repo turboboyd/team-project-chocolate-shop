@@ -34,9 +34,8 @@
 }
 
 .products-btn {
-    min-width: 94px;
-    min-height: 33px;
-    background: #FAFAFA;
+    padding: 8px 20px;
+    background: var(--modal-btn-bgr-color);
     border: 1px solid var(--border-transparent-color);
     border-radius: 100px;
     font-weight: 600;
@@ -75,10 +74,5 @@
 
 }
 
-@media screen and (min-width: 1200px) {
-    .products-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px 18px;
-    }
-}
+/* @media screen and (min-width: 1200px) {
+} */
