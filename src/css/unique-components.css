@@ -110,7 +110,7 @@
   line-height: 1.2;
   margin-right: 6px;
   border-radius: 35px;
-  border: 1px solid var(--accent-color); /* на мій погляд треба для помаранчевої фішки також задавати бордер, бо без нього вона виглядає меншою*/
+  border: 1px solid var(--accent-color);
 }
 .components-block-last .components-blocktext {
   padding: 6px 13px;
