@@ -4,6 +4,7 @@ $('.slider').slick({
     dots:true,
     variableWidth: true,
     speed:1000,
-    infinite:false    
+    infinite:false,
+    slideToShow:1    
 });
 })
