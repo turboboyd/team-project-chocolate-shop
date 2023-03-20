@@ -1,6 +1,6 @@
   .components-title{
-    font-size: 20px;
-    line-height: 1.2;
+    max-width: 283px;
+    margin: 0 auto 24px;
     }
  
     .components-text,
@@ -137,10 +137,8 @@
     
     @media screen and (min-width: 768px) {
       .components-title{
-        width: 411px;
+        max-width: 411px;
         margin: 0 auto 28px;
-        font-size: 24px;
-         line-height: 1.17;
       }
       
       .components-text{
