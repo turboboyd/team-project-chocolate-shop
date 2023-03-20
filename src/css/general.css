@@ -14,8 +14,7 @@ body{
 }
 
 .section {
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 72px;
 }
 
 .title {
@@ -45,18 +44,30 @@ body{
   border-radius: 100px;
   font-weight: 600;
   padding: 12px 28px;
-  height: 41px;
   font-size: 14px;
-  line-height: 1.214;
+  line-height: 1.21;
   background-color: var(--accent-color);
   color: var(--light-font-color);
   border: none;
   transition: background-color var(--transition) ;
   transition-property: color, background-color;
+  min-height: 41px;
 }
-
 .button:is(:hover, :focus) {
   background-color: var(--light-modal-color);
+  color: var(--accent-color);
+}
+
+.button-second{
+  border: 1px solid var(--light-font-color);
+  background-color: transparent;
+  color: var(--light-font-color);
+  transition: var(--transition);
+}
+
+
+.button:is(:hover, :focus) {
+  background-color: transparent;
   color: var(--accent-color);
 }
 
@@ -82,15 +93,13 @@ body{
   }
 
   .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
   }
   .title {
     margin-bottom: 50px;
   }
   .button {
     padding: 14px 40px;
-    height: 45px;
   }
 }
 
@@ -101,7 +110,6 @@ body{
   }
 
   .section {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 128px;
   }
 }
