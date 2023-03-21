@@ -98,13 +98,13 @@
   transition:  var(--transition);
 }
 
-button:hover .hero-btn-scroll,
-button:focus .hero-btn-scroll {
+.hero-btn-scroll:hover,
+.hero-btn-scroll:focus {
     color: var(--accent-color)
 }
 
- button:hover .hero-scroll-icon,
- button:focus .hero-scroll-icon {
+a:hover .hero-scroll-icon,
+a:focus .hero-scroll-icon {
   background-color:var(--accent-color);
   fill: var(--light-font-color);
 }
