@@ -1,29 +1,24 @@
-.subscribe-container {
-  padding: 62px 20px;
-  margin: 0 auto;
-  background: url(../img/img-subscribe/Subcribe-mob.jpg),
+.subscribe-section {
+ 
+background: url(../img/img-subscribe/Subcribe-mob.jpg),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .subscribe-section {
-    min-width: 768px;
-    padding: 72px 151px;
-    background: url(../img/img-subscribe/Subcribe-tab.jpg),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    background-size: cover;
-  }
+  
 }
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .subscribe-container {
+  .subscribe-section {
     background-image: url(../img/img-subscribe/Subcribe-mob2x.jpg),
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
   }
+}
+.subscribe-container {
+  padding: 62px 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .subscribe-title {
@@ -39,7 +34,20 @@
 }
 
 @media screen and (min-width: 768px) {
+  .subscribe-section {
+    background: url(../img/img-subscribe/Subcribe-tab.jpg),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-size: cover;
+  }
   .subscribe-container {
+    min-width: 768px;
+    padding: 72px 151px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .subscribe-section {
     background: url(../img/img-subscribe/Subcribe-tab.jpg),
       linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-size: cover;
@@ -48,7 +56,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .subscribe-container {
+    .subscribe-section {
       background-image: url(../img/img-subscribe/Subcribe-tab2x.jpg),
         linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     }
@@ -63,10 +71,15 @@
     color: var(--light-font-color);
     margin: 0 auto 24px;
   }
+  .subscribe-send {
+    min-height: 50px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .subscribe-container {
+  .subscribe-section {
     background: url(../img/img-subscribe/Subcribe-desk.jpg),
       linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-size: cover;
@@ -75,7 +88,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .subscribe-container {
+    .subscribe-section {
       background-image: url(../img/img-subscribe/Subcribe-desk2x.jpg),
         linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     }
