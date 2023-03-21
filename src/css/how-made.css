@@ -87,6 +87,12 @@
   transform: translate(-50%, -50%);
   fill: #f5f4f4;
   z-index: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.poster-container:hover .how-made-play-icon {
+  width: 60px;
+  height: 60px;
 }
 
 .video-container iframe {
