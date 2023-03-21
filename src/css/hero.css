@@ -1,4 +1,4 @@
-.hero-box {
+.hero-container {
   background-color: var(--advantages-bgr-color);
   padding: 395px 20px 20px 20px;
   background-image: linear-gradient(rgba(46, 47, 66, 0), rgba(46, 47, 66, 0)),
@@ -42,11 +42,9 @@
 
 .hero-subtitle {
   margin-bottom: 32px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%; /* 24/20 */
+  line-height: 1.2; /* 24/20 */
   letter-spacing: -0.03em;
   color: var(--light-font-color);
 }
@@ -54,8 +52,7 @@
 .hero-btns {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px 10px;
-  justify-content: space-between;
+  gap: 14px 14px;
   align-items: center;
   margin-bottom: 32px;
 }
@@ -75,23 +72,21 @@
   background-color: transparent;
 }
 
-.hero-scroll-text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 116.666667%; /* 14/12 */
-  letter-spacing: -0.03em;
-  color: var(--light-font-color);
-  transition:  var(--transition);
-}
-
 .hero-btn-scroll {
   display: flex;
   gap: 14px;
   cursor: pointer;
   align-items:center;
-  max-width: 110px;
+  max-width: 120px;
+  background-color:transparent;
+  border:none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  /* 14/12 */
+  letter-spacing: -0.03em;
+  color: var(--light-font-color);
+  transition: var(--transition);
 }
 
 .hero-scroll-icon {
@@ -103,13 +98,13 @@
   transition:  var(--transition);
 }
 
-a:hover .hero-scroll-text,
-a:focus .hero-scroll-text {
+button:hover .hero-btn-scroll,
+button:focus .hero-btn-scroll {
     color: var(--accent-color)
 }
 
- a:hover .hero-scroll-icon,
- a:focus .hero-scroll-icon {
+ button:hover .hero-scroll-icon,
+ button:focus .hero-scroll-icon {
   background-color:var(--accent-color);
   fill: var(--light-font-color);
 }
@@ -134,11 +129,10 @@ a:focus .hero-scroll-text {
 
   .hero-btns {
     gap: 14px;
-    justify-content: unset;
     margin-bottom: 0;
   }
 
-  .hero-box {
+  .hero-container {
     padding: 671px 40px 40px 40px;
     background-image: linear-gradient(rgba(46, 47, 66, 0), rgba(46, 47, 66, 0)),
       url('../img/hero/chocolate-covered-tablet-1x.jpg');
@@ -159,7 +153,7 @@ a:focus .hero-scroll-text {
   .hero-subtitle {
     max-width: 484px;
     font-size: 28px;
-    line-height: 121.428571%; /* 34/28 */
+    line-height: 1.21; /* 34/28 */
   }
 }
 
@@ -167,7 +161,7 @@ a:focus .hero-scroll-text {
 @media screen and (min-width: 1200px) {
  
 
-  .hero-box {
+  .hero-container {
     padding: 381px 40px 40px 40px;
     background-image: linear-gradient(rgba(46, 47, 66, 0), rgba(46, 47, 66, 0)),
       url('../img/hero/chocolate-covered-desktop-1x.jpg');
