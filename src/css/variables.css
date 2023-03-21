@@ -9,7 +9,6 @@
   --main-font-color-transparent: rgba(17, 17, 17, 0.7);
   --border-transparent-color: rgba(17, 17, 17, 0.1);
   --shadow-color: rgba(215, 228, 249, 0.25);
-  --font-second: 'Roboto', sans-serif;
   --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   --scroll-thumb-color: #f16529;
   --advantage-text-color: rgba(255, 255, 255, 0.5);

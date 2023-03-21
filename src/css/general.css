@@ -15,6 +15,7 @@ body{
 
 .section {
   padding-top: 72px;
+  overflow: hidden;
 }
 
 .title {
