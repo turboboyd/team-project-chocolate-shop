@@ -1,5 +1,6 @@
 .section-review {
   text-align: center;
+  padding-bottom: 72px;
 }
 .review-list {
   margin-bottom: 32px;
@@ -45,7 +46,7 @@
   align-items: flex-end;
 }
 .review-slider .slick-dots {
- width: 106px;
+  max-width: 210px;
 }
 .review-btn {
   background-color: transparent;
@@ -59,6 +60,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .section-review {
+    padding-bottom: 100px;
+  }
   .review-wrap {
     width: 344px;
   }
@@ -78,6 +82,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .section-review {
+      padding-bottom: 128px;
+    }
   .review-wrap {
     width: 360px;
   }
