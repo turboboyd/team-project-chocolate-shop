@@ -3,6 +3,7 @@
   width: 231px;
   min-height: 196px;
   margin: 0 auto;
+  margin-bottom: 32px;
 }
 .buynow-slider .slick-list {
   margin-bottom: 14px;
@@ -31,6 +32,8 @@
   .buynow-slider {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 40px;
+    width: 513px;
   }
   .buynow-slider .slick-dots {
     position: absolute;
@@ -48,6 +51,9 @@
   .buynow-product {
     width: 160px;
     padding: 20px 24px 18px;
+  }
+  .buynow-slider .slick-list {
+    margin-bottom: 0;
   }
 }
 /* Слайдер */
@@ -93,7 +99,6 @@
 .buynow-form {
   display: flex;
   flex-direction: column;
-  margin-top: 32px;
 }
 .buynow-label {
   margin-top: 18px;
@@ -172,8 +177,5 @@
   .buynow-label {
     font-size: 14px;
     line-height: calc(18 / 14);
-  }
-  .buynow-form {
-    margin-top: 40px;
   }
 }
