@@ -86,18 +86,19 @@
   }
 }
 
-.modal.active{
+.modal.active {
   animation-name: fade-right;
   animation-duration: 300ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
+
 }
 
 @keyframes fade-right {
   0% {
-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
   }
+
   100% {
-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
