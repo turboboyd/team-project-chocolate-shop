@@ -125,12 +125,12 @@
 
 .header-menu-nav {
   padding-left: 50px;
+  margin-bottom: 24px;
 }
 
 .header-menu-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
 
   color: var(--light-font-color);
 
