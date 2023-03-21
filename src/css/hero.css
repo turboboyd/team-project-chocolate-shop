@@ -59,12 +59,11 @@
   margin-bottom: 32px;
 }
 
-
 .hero-btn {
-  border: 1px solid var(--light-font-color) ;
+  border: 1px solid var(--light-font-color);
   background-color: transparent;
   color: var(--light-font-color);
-  transition:  var(--transition);
+  transition: var(--transition);
 }
 
 .hero-btn:hover,
@@ -82,17 +81,17 @@
   line-height: 116.666667%; /* 14/12 */
   letter-spacing: -0.03em;
   color: var(--light-font-color);
-  transition:  var(--transition);
+  transition: var(--transition);
 }
 
 .hero-btn-scroll {
   display: flex;
   gap: 14px;
   cursor: pointer;
-  align-items:center;
+  align-items: center;
   max-width: 120px;
-  background-color:transparent;
-  border:none;
+  background-color: transparent;
+  border: none;
 }
 
 .hero-scroll-icon {
@@ -101,23 +100,19 @@
   background-color: var(--light-font-color);
   border-radius: 50%;
   fill: var(--accent-color);
-  transition:  var(--transition);
+  transition: var(--transition);
 }
 
 button:hover .hero-scroll-text,
 button:focus .hero-scroll-text {
-    color: var(--accent-color)
+  color: var(--accent-color);
 }
 
- button:hover .hero-scroll-icon,
- button:focus .hero-scroll-icon {
-  background-color:var(--accent-color);
+button:hover .hero-scroll-icon,
+button:focus .hero-scroll-icon {
+  background-color: var(--accent-color);
   fill: var(--light-font-color);
 }
-
-
-
-
 
 /* Mobile */
 @media screen and (min-width: 375px) {
@@ -125,8 +120,6 @@ button:focus .hero-scroll-text {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
- 
-
   .hero-btn-flex {
     display: flex;
     justify-content: space-between;
@@ -165,8 +158,6 @@ button:focus .hero-scroll-text {
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
- 
-
   .hero-container {
     padding: 381px 40px 40px 40px;
     background-image: linear-gradient(rgba(46, 47, 66, 0), rgba(46, 47, 66, 0)),
