@@ -40,7 +40,7 @@
 /* Налаштування для ширини екрану з 768px до 1199 */
 @media screen and (min-width: 768px) {
   .top-sellers-list {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 
     display: flex;
     flex-direction: row;
@@ -59,7 +59,9 @@
   }
 
   .top-sellers-button {
-    position: absolute;
+    min-height: 50px;
+    min-width: 160px;
+    font-size: 18px;
   }
   .top-sellers-button-wrap {
     display: flex;

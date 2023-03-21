@@ -9,7 +9,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 101;
-  transition: 0.3s all;
+  transition: var(--transition);
 }
 
 .modal {
@@ -22,7 +22,9 @@
   visibility: hidden;
 
   border-radius: 15px;
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px -0.5px var(--shadow-color);
+
+  transition: var(--transition);
 }
 
 .modal.active,
@@ -35,6 +37,13 @@
 .icon-close-modal {
   width: 24px;
   height: 24px;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-close-modal:is(:hover, :focus) {
+  width: 40px;
+  height: 40px;
+  stroke: var(--accent-color);
 }
 
 .input-modal {
@@ -45,7 +54,7 @@
   padding-bottom: 14px;
 
   width: 100%;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border: 1.5px solid var(--border-transparent-color);
   border-radius: 8px;
   background-color: transparent;
 
@@ -75,3 +84,21 @@
     padding-bottom: 22px;
   }
 }
+
+.modal.active {
+  animation-name: fade-right;
+  animation-duration: 300ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translate(-100%, -50%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+

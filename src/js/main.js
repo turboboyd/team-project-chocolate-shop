@@ -1,8 +1,10 @@
 // import './products-slider-click';
 import './header-menu';
 import './modal';
-import './review-slider';
+import './slider';
 import './open-modal';
-import './tel-modal-review';
+import './tel-modal';
 import './how-made-video';
-import './buy-now-slider';
+// import './buy-now-slider';
+// import './animation';
+import './scroll';

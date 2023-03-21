@@ -15,12 +15,13 @@ body{
 
 .section {
   padding-top: 72px;
+  overflow: hidden;
 }
 
 .title {
   font-weight: 600;
   font-size: 24px;
-  line-height: 1.17;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
@@ -57,20 +58,28 @@ body{
   background-color: var(--light-modal-color);
   color: var(--accent-color);
 }
-
 .button-second{
   border: 1px solid var(--light-font-color);
   background-color: transparent;
   color: var(--light-font-color);
   transition: var(--transition);
 }
-
-
 .button-second.button:is(:hover, :focus) {
   background-color: transparent;
   color: var(--accent-color);
 }
-
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} 
 /* Налаштування ТІЛЬКИ для мобільної версії і менше */
 @media screen and (max-width: 767px) {
   .title {
@@ -96,6 +105,7 @@ body{
     padding-top: 100px;
   }
   .title {
+    line-height: 1.17;
     margin-bottom: 50px;
   }
   .button {

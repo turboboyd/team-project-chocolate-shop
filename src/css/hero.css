@@ -42,11 +42,9 @@
 
 .hero-subtitle {
   margin-bottom: 32px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%; /* 24/20 */
+  line-height: 1.2; /* 24/20 */
   letter-spacing: -0.03em;
   color: var(--light-font-color);
 }
@@ -73,23 +71,21 @@
   background-color: transparent;
 }
 
-.hero-scroll-text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 116.666667%; /* 14/12 */
-  letter-spacing: -0.03em;
-  color: var(--light-font-color);
-  transition: var(--transition);
-}
-
 .hero-btn-scroll {
   display: flex;
   gap: 14px;
   cursor: pointer;
   align-items: center;
   max-width: 120px;
+  background-color:transparent;
+  border:none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  /* 14/12 */
+  letter-spacing: -0.03em;
+  color: var(--light-font-color);
+  transition: var(--transition);
 }
 
 .hero-scroll-icon {
@@ -150,7 +146,7 @@ a:focus .hero-scroll-icon {
   .hero-subtitle {
     max-width: 484px;
     font-size: 28px;
-    line-height: 121.428571%; /* 34/28 */
+    line-height: 1.21; /* 34/28 */
   }
 }
 

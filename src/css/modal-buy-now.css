@@ -1,9 +1,9 @@
 /* Слайдер */
 
-.buynow-slider{
+.buynow-slider {
   width: 231px;
   min-height: 196px;
-  margin: 0 auto 32px;
+  margin: 0 auto;
 }
 .buynow-slider .slick-list {
   margin-bottom: 14px;
@@ -14,13 +14,11 @@
   width: 100%;
   display: flex;
   gap: 16px;
-
 }
 
 .buynow-slider .slick-dots {
   width: 106px;
 }
-
 
 .buynow-product {
   width: 231px;
@@ -35,12 +33,16 @@
   margin-bottom: 16px;
 }
 
+.buynow-label:first-child {
+  margin-top: 32px;
+}
+
 @media screen and (min-width: 768px) {
   .buynow-slider {
-      width: 100%;
-      margin: 0 auto 40px;
-    }
-  .buynow-slider  .slick-dots{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .buynow-slider .slick-dots {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -56,18 +58,15 @@
   .buynow-product {
     width: 160px;
     padding: 20px 24px 18px;
-    }
-
+  }
 }
 
-
 /* Слайдер */
-
 
 .buynow {
   min-width: 311px;
   transform: translate(-50%, -50%) scale(1);
-  background-color: #fafafa;
+  background-color: var(--modal-btn-bgr-color);
   height: 100%;
   overflow: auto;
 }
@@ -82,11 +81,9 @@
   background-color: transparent;
   border-color: transparent;
   padding: 0;
-  width: 24px;
-  height: 24px;
 }
 .buynow-close {
-  stroke: #111;
+  stroke: var(--main-font-color);
 }
 .buynow-title {
   color: var(--accent-color);
@@ -132,6 +129,7 @@
   flex-direction: column;
 }
 .buynow-label {
+  margin-top: 18px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 12px;
@@ -139,9 +137,14 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
+.buynow-label:first-child {
+  margin-top: 40px;
+}
+
 .buynow-comment {
   resize: none;
   height: 91px;
+  margin-bottom: 18px;
 }
 .buynow-submit {
   max-width: 110px;
@@ -174,10 +177,10 @@
 }
 @media screen and (min-width: 768px) {
   @media (min-height: 1058px) {
-  .buynow {
-    height: 1058px;
+    .buynow {
+      height: 1058px;
+    }
   }
-}
   .buynow {
     width: 609px;
   }
@@ -207,9 +210,6 @@
     justify-content: space-between;
     min-width: calc((100% - 21px) / 2);
     gap: 21px;
-  }
-  .buynow-marg {
-    margin-bottom: 18px;
   }
   .buynow-submit {
     max-width: 133px;
