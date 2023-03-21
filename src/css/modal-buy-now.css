@@ -150,6 +150,9 @@
   .buynow {
     width: 609px;
   }
+  .buynow-title {
+    margin-bottom: 32px;
+  }
   .buynow-counteiner {
     padding: 48px;
   }
