@@ -57,20 +57,28 @@ body{
   background-color: var(--light-modal-color);
   color: var(--accent-color);
 }
-
 .button-second{
   border: 1px solid var(--light-font-color);
   background-color: transparent;
   color: var(--light-font-color);
   transition: var(--transition);
 }
-
-
 .button-second.button:is(:hover, :focus) {
   background-color: transparent;
   color: var(--accent-color);
 }
-
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} 
 /* Налаштування ТІЛЬКИ для мобільної версії і менше */
 @media screen and (max-width: 767px) {
   .title {

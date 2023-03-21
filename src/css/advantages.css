@@ -1,32 +1,34 @@
 .advantages {
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 20px; /* по макету падінги тільки на мобільній
+   версії 20px, для інших версій - 50px*/
+  padding-bottom: 20px;
   background: var(--advantages-bgr-color);
-  padding-top: 96px;
-  padding-bottom: 96px;
+  /* padding-top: 96px;
+  /* padding-bottom: 96px; */ /* двічі заданий падінг для одного класу */
 }
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 20px; /*по макету =20px*/
 }
 .advantages-list .advantages-head {
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.1;
+  line-height: 1.22; /*22/18=1,22*/
   text-align: left;
   color: var(--light-font-color);
   margin-bottom: 18px;
 }
 .advantages-text {
-  line-height: 1.2;
+  line-height: 1.21;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
   gap: 72px;
 }
-.advantages-title-hide {
+/* видалила цей клас взагалі */
+/* .advantages-title-hide { 
   display: none;
-}
+} */
 .advantages-icon {
   margin-bottom: 30px;
   height: 62px;
@@ -39,8 +41,8 @@
 }
 @media screen and (min-width: 768px) {
   .advantages {
-    padding-top: 51px;
-    padding-bottom: 51px;
+    padding-top: 50px; /*по макету 50px*/
+    padding-bottom: 50px;
   }
   .advantages-list {
     gap: 60px;
@@ -67,4 +69,11 @@
     bottom: 75px;
     background-color: rgba(255, 255, 255, 0.5);
   }
+}
+/*Анімація іконок*/
+.advantages-icon{ transform: perspective(600);
+  transition: transform var(--transition);
+}
+.advantages-icon:hover{
+  transform:perspective(600px) rotateY(180deg);
 }

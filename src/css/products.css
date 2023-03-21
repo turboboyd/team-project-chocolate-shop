@@ -1,77 +1,76 @@
-.products-section{
-    overflow: hidden;
+.products-section {
+  overflow: hidden;
 }
 
 .products-card {
-    max-width: 335px;
-    background: #FFFFFF;
-    border: 1px solid var(--border-transparent-color);
-    border-radius: 15px;
-    padding: 32px 52px;
-    text-align: center;
-    overflow: hidden;
+  max-width: 335px;
+  /* заменил цвет на переменную */
+  background: var(--light-font-color);
+  border: 1px solid var(--border-transparent-color);
+  border-radius: 15px;
+  padding: 32px 52px;
+  text-align: center;
+  overflow: hidden;
 }
 
 .products-card img {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .products-name {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.33;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    margin-bottom: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
 }
 
 .products-description {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: var(--main-font-color-transparent);
-    margin-bottom: 18px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: var(--main-font-color-transparent);
+  margin-bottom: 18px;
 }
 
 .products-btn {
-    padding: 8px 20px;
-    background: var(--modal-btn-bgr-color);
-    border: 1px solid var(--border-transparent-color);
-    border-radius: 100px;
-    font-weight: 600;
-    line-height: 1.21;
+  padding: 8px 20px;
+  background: var(--modal-btn-bgr-color);
+  border: 1px solid var(--border-transparent-color);
+  border-radius: 100px;
+  font-weight: 600;
+  line-height: 1.21;
 }
 
-.products-slider{
-    max-width: 100%;
-    min-height: 409px;
+.products-slider {
+  max-width: 100%;
+  min-height: 409px;
 }
 
 .products-slider .slick-list {
-    width: 100%;
-    margin-bottom: 20px;
-    overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
-.products-slider .slick-track{
-    display: flex;
-    gap: 18px;
+.products-slider .slick-track {
+  display: flex;
+  gap: 18px;
 }
 
 .products-grid .slick-dots {
-    max-width: 210px;
+  max-width: 210px;
 }
 
-
 @media screen and (min-width: 768px) {
-    .products-slider .slick-list {
+  .products-slider .slick-list {
     width: 1136px;
     margin-bottom: 32px;
-    }
-    .products-card {
-        width: 270px;
-        padding: 32px 20px;
-    }
-
+  }
+  .products-card {
+    width: 270px;
+    padding: 32px 20px;
+  }
 }
 
 /* @media screen and (min-width: 1200px) {

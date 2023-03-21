@@ -1,20 +1,28 @@
 .subscribe-container {
   padding: 62px 20px;
   margin: 0 auto;
-  background:
-    url(../img/img-subscribe/Subcribe-mob.jpg), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background: url(../img/img-subscribe/Subcribe-mob.jpg),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .subscribe-section {
+    min-width: 768px;
+    padding: 72px 151px;
+    background: url(../img/img-subscribe/Subcribe-tab.jpg),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-size: cover;
+  }
+}
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .subscribe-container{
-    background-image:
-      url(../img/img-subscribe/Subcribe-mob2x.jpg), linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7));
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe-container {
+    background-image: url(../img/img-subscribe/Subcribe-mob2x.jpg),
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
   }
 }
 
@@ -32,22 +40,23 @@
 
 @media screen and (min-width: 768px) {
   .subscribe-container {
-    background: url(../img/img-subscribe/Subcribe-tab.jpg), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background: url(../img/img-subscribe/Subcribe-tab.jpg),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .subscribe-container{
-      background-image: url(../img/img-subscribe/Subcribe-tab2x.jpg), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-      ;
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-container {
+      background-image: url(../img/img-subscribe/Subcribe-tab2x.jpg),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     }
   }
 
   .subscribe-title {
-      width: 378px;
-      margin: 0 auto 24px;
+    width: 378px;
+    margin: 0 auto 24px;
   }
   .subscribe-text {
     width: 467px;
@@ -57,18 +66,18 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .subscribe-container{
-    background: url(../img/img-subscribe/Subcribe-desk.jpg), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  .subscribe-container {
+    background: url(../img/img-subscribe/Subcribe-desk.jpg),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .subscribe-container {
-      background-image: url(../img/img-subscribe/Subcribe-desk2x.jpg), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-      ;
+      background-image: url(../img/img-subscribe/Subcribe-desk2x.jpg),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     }
   }
 }
-
