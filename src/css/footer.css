@@ -21,14 +21,14 @@
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
 
   letter-spacing: -0.02em;
 
   color: #ffffff;
 
   width: 300px;
-  height: 68px;
+  min-height: 56px;
 }
 
 .footer-text-2 {
@@ -37,10 +37,6 @@
 
 .footer-contact {
   display: flex;
-
-  padding-bottom: 32px;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header-contect-list {
@@ -49,13 +45,10 @@
   gap: 4px;
 }
 
-.footer-contact-list {
-}
-
 .footer-contact-text-1 {
   font-weight: 500;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   color: #ffffff;
 
   margin-bottom: 14px;
@@ -71,7 +64,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   letter-spacing: -0.02em;
 
   color: #ffffff;
@@ -80,7 +73,7 @@
 .footer-contact-text-2 {
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   letter-spacing: -0.02em;
 
   color: #ffffff;
@@ -101,14 +94,11 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
 
   letter-spacing: -0.02em;
 
   color: #ffffff;
-}
-
-.footer-networks-container {
 }
 
 .footer-networks-list {
@@ -129,6 +119,11 @@
 .footer-menu-text {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.test-2 {
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-menu-text:is(:hover, :focus) {
@@ -165,21 +160,24 @@
   .test-2 {
     display: flex;
     flex-direction: row;
+    padding-bottom: 54px;
   }
 
   .footer-container {
     display: flex;
     flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .footer-main-text {
-    margin-bottom: 54px;
+    margin-bottom: 0;
   }
 
   .footer-text {
     font-weight: 500;
     font-size: 28px;
-    line-height: 34px;
+    line-height: 1.21;
 
     letter-spacing: -0.02em;
   }
@@ -196,7 +194,6 @@
 
   .footer-menu {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-
     padding-top: 24px;
   }
 
@@ -204,10 +201,6 @@
     display: flex;
     flex-direction: row;
     gap: 24px;
-  }
-
-  .test-2 {
-    display: flex;
   }
 
   .footer-networks-list {
