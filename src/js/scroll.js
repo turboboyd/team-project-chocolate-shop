@@ -1,10 +1,14 @@
-$(document).ready(function () {
-  $('#header-nav').on('click', 'a', function (event) {
-    event.preventDefault();
+const anchors = document.querySelectorAll('a[href*="#"]')
 
-    var id = $(this).attr('href'),
-      top = $(id).offset().top;
-
-    $('body,html').animate({ scrollTop: top }, 550);
-  });
-});
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
