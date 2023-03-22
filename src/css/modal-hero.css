@@ -32,7 +32,7 @@
     line-height: 1.2;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #FCF1E0;
+    color: var(--light-modal-color);
 }
 .modal-hero-text {
     margin-top: 8px;
@@ -43,7 +43,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
-    color: #FCF1E0;
+    color: var(--light-modal-color);
 }
 
 

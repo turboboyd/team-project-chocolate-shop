@@ -5,7 +5,7 @@
   transform: translate(-50%, -50%) scale(1);
   width: 311px;
   height: 350px;
-  background: #fafafa;
+  background: var(--modal-btn-bgr-color);
   border-radius: 15px;
   background-image: url(../img/modal-hero/bar-chocolate-mob-1.jpg);
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@
   padding: 0;
 }
 .modal-subscribe-close-icon {
-  stroke: #ffffff;
+  stroke: var(--light-font-color);
 }
 .modal-subscribe-title {
   margin-top: 201px;
