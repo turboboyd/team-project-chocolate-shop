@@ -209,16 +209,17 @@
         pattern=".{10,40}"
         title="The number of characters should not be less than 10 and should not exceed 40"
       />
-      <label class="buynow-label" for="phone">Phone number</label>
-      <input
-        type="tel"
-        class="input-modal phone-input"
-        name="tel-review"
-        placeholder="Phone number"
-        pattern="^\+[0-9]{12}$"
-        title="Number of digits should not be 12"
-        required
-      />
+      <label class="buynow-label" for="phone" name="tel-buynow">Phone number</label>
+    <div class="country-container"></div>
+    <input
+      type="tel"
+      class="input-modal phone-input modal-review-text-input"
+      name="tel-buynow"
+      placeholder="Phone number"
+      pattern="^\+[0-9]{12}$"
+      title="Number of digits should not be 12"
+      required
+    />
       <label class="buynow-label" for="card">Card number</label>
       <div class="input-buynow-wrap">
         <input
