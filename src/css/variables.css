@@ -12,4 +12,6 @@
   --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   --scroll-thumb-color: #f16529;
   --advantage-text-color: rgba(255, 255, 255, 0.5);
+  --btn-shadow1: rgb(46 47 66 / .08);
+  --btn-shadow2: rgb(46 47 66 / .16);
 }
