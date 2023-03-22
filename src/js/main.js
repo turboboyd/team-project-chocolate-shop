@@ -1,5 +1,6 @@
 // import './products-slider-click';
 import './header-menu';
+import './buy-now-modal';
 import './modal';
 import './slider';
 import './open-modal';

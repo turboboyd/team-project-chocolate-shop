@@ -174,7 +174,7 @@
         <button class="products-btn" type="button">300 g</button>
       </li>
     </ul>
-    <form class="buynow-form">
+    <form class="buynow-form" name="buynow">
       <label class="buynow-label" for="nameperson">Personal information</label>
       <div class="buynow-name">
         <input
@@ -217,7 +217,7 @@
         id="phone"
         placeholder="Phone number"
         required
-        pattern="^\+[0-9]{12}$"
+        pattern="^\[0-9]{9}$"
         title="Number of digits should not be 12"
       />
       <label class="buynow-label" for="card">Card number</label>
@@ -229,7 +229,7 @@
           id="card"
           placeholder="Enter card"
           required
-          pattern="{.16,16}"
+          pattern="^\[0-9]{16}$"
         />
         <svg class="buynow-mcard" width="32" height="21">
           <use href="./img/icons.svg#icon-master-card"></use>
@@ -246,13 +246,7 @@
         maxlength="500"
         title="The number of characters should not be less than 5 and should not exceed 500"
       ></textarea>
-      <button
-        class="button buynow-submit js-open-modal js-modal-close"
-        type="submit"
-        data-modal="modal-hero"
-      >
-        Submit
-      </button>
+      <button class="button buynow-submit" type="submit">Submit</button>
     </form>
   </div>
 </div>
