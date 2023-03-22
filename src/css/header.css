@@ -60,6 +60,11 @@
   stroke: var(--main-font-color);
 }
 
+.header-soc-link:hover .header-soc-icon {
+  transform: rotateY(720deg);
+  transition: transform 800ms ease-in-out;
+}
+
 .header-menu.is-hidden {
   visibility: hidden;
   transform: translateX(100%);

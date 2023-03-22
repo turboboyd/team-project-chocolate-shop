@@ -65,8 +65,9 @@
 }
 .advantages-icon {
   transform: perspective(600);
-  transition: transform var(--transition);
+  transition: transform 800ms ease-in-out;
 }
+
 .advantages-icon:hover {
-  transform: perspective(600px) rotateY(180deg);
+  transform: rotateY(720deg);
 }

@@ -50,9 +50,10 @@ body{
   background-color: var(--accent-color);
   color: var(--light-font-color);
   border: none;
-  transition: background-color var(--transition) ;
-  transition-property: color, background-color;
+  transition: background-color var(--transition), color var(--transition);
   height: 41px;
+  box-shadow: 0 1px 6px var(--btn-shadow1),
+  0 1px 1px var(--btn-shadow2), 0 2px 1px var(--btn-shadow1);
 }
 .button:is(:hover, :focus) {
   background-color: var(--light-modal-color);
@@ -62,7 +63,7 @@ body{
   border: 1px solid var(--light-font-color);
   background-color: transparent;
   color: var(--light-font-color);
-  transition: var(--transition);
+  transition: background-color var(--transition), color var(--transition);
 }
 .button-second.button:is(:hover, :focus) {
   background-color: transparent;
