@@ -1,6 +1,5 @@
 .section-review {
   text-align: center;
-  padding-bottom: 72px;
 }
 .review-list {
   margin-bottom: 32px;
@@ -8,8 +7,7 @@
 .review-wrap {
   width: 335px;
   position: relative;
-  
-  height: 200px;
+  min-height: 200px;
   background-color: var(--light-font-color);
   border: 1px solid var(--border-transparent-color);
   box-shadow: 0px 9.04932px 26.5717px var(--shadow-color);
@@ -32,6 +30,8 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--main-font-color-transparent);
+  overflow: auto;
+  max-height: 70px;
 }
 .review-slider .slick-list{
   margin-bottom: 20px;
@@ -60,9 +60,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section-review {
-    padding-bottom: 100px;
-  }
   .review-wrap {
     width: 344px;
   }
@@ -82,9 +79,6 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-review {
-      padding-bottom: 128px;
-    }
   .review-wrap {
     width: 360px;
   }

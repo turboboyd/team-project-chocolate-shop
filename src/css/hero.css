@@ -57,12 +57,11 @@
   margin-bottom: 32px;
 }
 
-
 .hero-btn {
-  border: 1px solid var(--light-font-color) ;
+  border: 1px solid var(--light-font-color);
   background-color: transparent;
   color: var(--light-font-color);
-  transition:  var(--transition);
+  transition: var(--transition);
 }
 
 .hero-btn:hover,
@@ -76,7 +75,7 @@
   display: flex;
   gap: 14px;
   cursor: pointer;
-  align-items:center;
+  align-items: center;
   max-width: 120px;
   background-color:transparent;
   border:none;
@@ -95,7 +94,7 @@
   background-color: var(--light-font-color);
   border-radius: 50%;
   fill: var(--accent-color);
-  transition:  var(--transition);
+  transition: var(--transition);
 }
 
 .hero-btn-scroll:hover,
@@ -109,18 +108,12 @@ a:focus .hero-scroll-icon {
   fill: var(--light-font-color);
 }
 
-
-
-
-
 /* Mobile */
 @media screen and (min-width: 375px) {
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) {
- 
-
   .hero-btn-flex {
     display: flex;
     justify-content: space-between;
@@ -159,8 +152,6 @@ a:focus .hero-scroll-icon {
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
- 
-
   .hero-container {
     padding: 381px 40px 40px 40px;
     background-image: linear-gradient(rgba(46, 47, 66, 0), rgba(46, 47, 66, 0)),
