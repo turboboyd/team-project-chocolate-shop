@@ -7,7 +7,7 @@
     <title>SIMPLY CHOCOLATE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
-      <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -20,7 +20,7 @@
     <!--Світлана додала лінк на анімацію-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <script type="module" crossorigin src="/team-project-chocolate-shop/assets/index-64a48d92.js"></script>
+    <script type="module" crossorigin src="/team-project-chocolate-shop/assets/index-51e1c4ab.js"></script>
     <link rel="stylesheet" href="/team-project-chocolate-shop/assets/index-845c3bbc.css">
   </head>
   <body>
@@ -1227,16 +1227,17 @@
         pattern=".{10,40}"
         title="The number of characters should not be less than 10 and should not exceed 40"
       />
-      <label class="buynow-label" for="phone">Phone number</label>
-      <input
-        type="tel"
-        class="input-modal phone-input"
-        name="tel-review"
-        placeholder="Phone number"
-        pattern="^\+[0-9]{12}$"
-        title="Number of digits should not be 12"
-        required
-      />
+      <label class="buynow-label" for="phone" name="tel-buynow">Phone number</label>
+    <div class="country-container"></div>
+    <input
+      type="tel"
+      class="input-modal phone-input modal-review-text-input"
+      name="tel-buynow"
+      placeholder="Phone number"
+      pattern="^\+[0-9]{12}$"
+      title="Number of digits should not be 12"
+      required
+    />
       <label class="buynow-label" for="card">Card number</label>
       <div class="input-buynow-wrap">
         <input
@@ -1430,7 +1431,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
      <!--Світлана додала скрипт на анімацію-->
