@@ -1,7 +1,7 @@
 <section class="section" id="top-sellers">
   <div class="container">
     <h2 class="title"><span class="title-brand-color">Top</span> Sellers</h2>
-    <ul class="top-sellers-list">
+    <ul class="top-sellers-list list">
       <li class="top-sellers-item">
         <picture>
           <source
@@ -43,39 +43,48 @@
         </p>
       </li>
       <li class="top-sellers-item">
-        <picture>
-          <source
-            srcset="
-              ./img/top-sellers/2img1x-desc.jpg 1x,
-              ./img/top-sellers/2img2x-desc.jpg 2x
-            "
-            media="(min-width : 1200px) "
-            class="top-sellers-img"
-          />
-          <source
-            srcset="
-              ./img/top-sellers/2img1x-tab.jpg 1x,
-              ./img/top-sellers/2img2x-tab.jpg 2x
-            "
-            media="(min-width : 768px) "
-            class="top-sellers-img"
-          />
-          <source
-            srcset="
-              ./img/top-sellers/2img1x-mob.jpg 1x,
-              ./img/top-sellers/2img2x-mob.jpg 2x
-            "
-            media="(min-width : 375px) "
-            class="top-sellers-img"
-          />
-          <img
-            src="./img/top-sellers/2img1x-desc.jpg"
-            alt="chocolate"
-            width="368"
-            height="464"
-            class="top-sellers-img"
-          />
-        </picture>
+        <div class="top-sellers-wrap">
+          <picture>
+            <source
+              srcset="
+                ./img/top-sellers/2img1x-desc.jpg 1x,
+                ./img/top-sellers/2img2x-desc.jpg 2x
+              "
+              media="(min-width : 1200px) "
+              class="top-sellers-img"
+            />
+            <source
+              srcset="
+                ./img/top-sellers/2img1x-tab.jpg 1x,
+                ./img/top-sellers/2img2x-tab.jpg 2x
+              "
+              media="(min-width : 768px) "
+              class="top-sellers-img"
+            />
+            <source
+              srcset="
+                ./img/top-sellers/2img1x-mob.jpg 1x,
+                ./img/top-sellers/2img2x-mob.jpg 2x
+              "
+              media="(min-width : 375px) "
+              class="top-sellers-img"
+            />
+            <img
+              src="./img/top-sellers/2img1x-desc.jpg"
+              alt="chocolate"
+              width="368"
+              height="464"
+              class="top-sellers-img"
+            />
+          </picture>
+        </div>
+        <button
+          type="button"
+          class="js-open-modal button top-sellers-button"
+          data-modal="modal-buy-now"
+        >
+          Buy now
+        </button>
       </li>
       <li class="top-sellers-item top-sellers-item-none">
         <picture>
@@ -97,19 +106,5 @@
         </picture>
       </li>
     </ul>
-    <div class="top-sellers-button-wrap">
-      <p class="top-sellers-button-text">
-        Crazy enough chocolate originates from a bean just like the coffee bean
-        called Cacao. Cacao has been around for thousands of years and was first
-        discovered by the Native American tribe called the Mayans.
-      </p>
-      <button
-        type="button"
-        class="js-open-modal button top-sellers-button"
-        data-modal="modal-buy-now"
-      >
-        Buy now
-      </button>
-    </div>
   </div>
 </section>

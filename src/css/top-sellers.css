@@ -1,96 +1,68 @@
-/* Налаштування ТІЛЬКИ для мобільної версії і менше */
+.top-sellers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+}
 
-@media screen and (max-width: 767px) {
-  .top-sellers-text {
-    font-size: 14px;
-    line-height: calc(18 / 14);
+.top-sellers-text {
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  max-width: 306px;
+}
 
-    letter-spacing: -0.02em;
+.top-sellers-img {
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
 
-    color: var(--main-font-color, #111111);
-  }
+
+.top-sellers-button{
+  display: block;
+  margin: 0 auto;
+}
+
+ @media screen and (max-width: 1199px) {
   .top-sellers-item-none {
     display: none;
   }
-  .top-sellers-list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .top-sellers-text {
-    margin-top: 20px;
-  }
-  .top-sellers-button-wrap {
-    display: flex;
-    justify-content: center;
-  }
-  .top-sellers-button-text {
-    display: none;
-  }
-  .top-sellers-img {
-    border-radius: 15px;
-  }
 }
-/* Налаштування для ширини екрану з 375px до 767 */
-@media screen and (min-width: 375px) {
-}
-/* Налаштування для ширини екрану з 768px до 1199 */
+  
 @media screen and (min-width: 768px) {
   .top-sellers-list {
-    margin-bottom: 32px;
-
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
     gap: 16px;
   }
-  .top-sellers-item {
-    flex-basis: calc((100%-16px) / 2);
-  }
-
-  .top-sellers-item-none {
-    display: none;
-  }
-  .top-sellers-text {
-    display: none;
-  }
-
-  .top-sellers-button {
-    min-height: 50px;
-    min-width: 160px;
-    font-size: 18px;
-  }
-  .top-sellers-button-wrap {
-    display: flex;
-    justify-content: right;
-  }
-  .top-sellers-button-text {
-    margin-right: auto;
-    width: 306px;
-  }
   .top-sellers-img {
-    border-radius: 15px;
+    margin-bottom: 32px;
   }
+  
+  .top-sellers-button{
+    font-size: 18px;
+    margin: 0 0 0 auto;
+  }
+} 
+
+@media screen and (min-width: 1200px) {
+
+ .top-sellers-list {
+  gap: 16px;
+  position: relative;
 }
 
-/* Налаштування для ширини екрану від 1200 */
-@media screen and (min-width: 1200px) {
-  .top-sellers-button-wrap {
-    display: flex;
-    justify-content: right;
-  }
-  .top-sellers-item-none {
-    display: block;
-  }
-  .top-sellers-button-text {
-    margin-right: auto;
-    width: 407px;
-    display: block;
-  }
-  .top-sellers-text {
-    display: none;
-  }
+.top-sellers-text {
+  max-width: 414px;
 }
+
+.top-sellers-button {
+  position: absolute;
+  right: 0;
+  top: 496px;
+}
+.top-sellers-wrap{
+  position: absolute;
+  left: 384px;
+}
+ }
