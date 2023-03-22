@@ -20,7 +20,7 @@
     <!--Світлана додала лінк на анімацію-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <script type="module" crossorigin src="/team-project-chocolate-shop/assets/index-2ac8364e.js"></script>
+    <script type="module" crossorigin src="/team-project-chocolate-shop/assets/index-8538c3b5.js"></script>
     <link rel="stylesheet" href="/team-project-chocolate-shop/assets/index-5df3abae.css">
   </head>
   <body>
@@ -1186,7 +1186,7 @@
         <button class="products-btn" type="button">300 g</button>
       </li>
     </ul>
-    <form class="buynow-form">
+    <form class="buynow-form" name="buynow">
       <label class="buynow-label" for="nameperson">Personal information</label>
       <div class="buynow-name">
         <input
@@ -1229,7 +1229,7 @@
         id="phone"
         placeholder="Phone number"
         required
-        pattern="^\+[0-9]{12}$"
+        pattern="^\[0-9]{9}$"
         title="Number of digits should not be 12"
       />
       <label class="buynow-label" for="card">Card number</label>
@@ -1241,7 +1241,7 @@
           id="card"
           placeholder="Enter card"
           required
-          pattern="{.16,16}"
+          pattern="^\[0-9]{16}$"
         />
         <svg class="buynow-mcard" width="32" height="21">
           <use href="/team-project-chocolate-shop/assets/icons-618f7dbf.svg#icon-master-card"></use>
@@ -1258,13 +1258,7 @@
         maxlength="500"
         title="The number of characters should not be less than 5 and should not exceed 500"
       ></textarea>
-      <button
-        class="button buynow-submit js-open-modal js-modal-close"
-        type="submit"
-        data-modal="modal-hero"
-      >
-        Submit
-      </button>
+      <button class="button buynow-submit" type="submit">Submit</button>
     </form>
   </div>
 </div>
