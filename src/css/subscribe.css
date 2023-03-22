@@ -1,23 +1,31 @@
 .subscribe-section {
- 
-background: url(../img/img-subscribe/Subcribe-mob.jpg),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background-color: var(--advantages-bgr-color); 
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
-@media (min-device-pixel-ratio: 2),
+@media screen and (max-width: 767px){
+  .subscribe-section {
+    max-width: 375px;
+    margin: 0 auto;
+    background: url(../img/img-subscribe/Subcribe-mob.jpg),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .subscribe-section {
-    background-image: url(../img/img-subscribe/Subcribe-mob2x.jpg),
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    .subscribe-section {
+      background-image: url(../img/img-subscribe/Subcribe-mob2x.jpg),
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    }
   }
 }
 .subscribe-container {
   padding: 62px 20px;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -27,7 +35,6 @@ background: url(../img/img-subscribe/Subcribe-mob.jpg),
 }
 
 .subscribe-text {
-  /* width: 326px; */
   letter-spacing: -0.02em;
   color: var(--light-font-color);
   margin-bottom: 24px;
@@ -35,6 +42,7 @@ background: url(../img/img-subscribe/Subcribe-mob.jpg),
 
 @media screen and (min-width: 768px) {
   .subscribe-section {
+    width: 768px;
     background: url(../img/img-subscribe/Subcribe-tab.jpg),
       linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-size: cover;
@@ -44,7 +52,6 @@ background: url(../img/img-subscribe/Subcribe-mob.jpg),
     padding: 72px 151px;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .subscribe-section {
@@ -80,6 +87,7 @@ background: url(../img/img-subscribe/Subcribe-mob.jpg),
 
 @media screen and (min-width: 1200px) {
   .subscribe-section {
+    width: 1200px;
     background: url(../img/img-subscribe/Subcribe-desk.jpg),
       linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-size: cover;
