@@ -3,8 +3,9 @@ $('.slider').slick({
     arrows:false,
     dots:true,
     variableWidth: true,
-    speed:1000,
-    infinite: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
     responsive: [
         {
             breakpoint: 375,
