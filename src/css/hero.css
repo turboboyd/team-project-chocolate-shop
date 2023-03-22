@@ -61,29 +61,36 @@
   color: var(--light-font-color);
   transition: var(--transition);
 }
-
-.hero-scroll-icon {
-  height: 24px;
-  width: 24px;
+.hero-scroll-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
   background-color: var(--light-font-color);
   border-radius: 50%;
+
+  transition: background-color var(--transition);
+}
+
+.hero-scroll-icon {
+  height: 16px;
+  width: 16px;
   fill: var(--accent-color);
   transition: var(--transition);
 }
 
 .hero-btn-scroll:hover,
 .hero-btn-scroll:focus {
-    color: var(--accent-color)
+  color: var(--accent-color);
 }
 
-a:hover .hero-scroll-icon,
-a:focus .hero-scroll-icon {
-  background-color:var(--accent-color);
+.hero-btn-scroll:is(:hover, :focus) .hero-scroll-wrap {
+  background-color: var(--accent-color);
+}
+
+.hero-btn-scroll:is(:hover, :focus) .hero-scroll-icon {
   fill: var(--light-font-color);
-}
-
-/* Mobile */
-@media screen and (min-width: 375px) {
 }
 
 /* Tablet */
@@ -128,9 +135,15 @@ a:focus .hero-scroll-icon {
     font-size: 14px;
     line-height: 1.29;
   }
-  .hero-scroll-icon {
+
+  .hero-scroll-wrap {
     width: 38px;
     height: 38px;
+  }
+
+  .hero-scroll-icon {
+    width: 22px;
+    height: 22px;
   }
 }
 
