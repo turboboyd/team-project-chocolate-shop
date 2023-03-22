@@ -4,6 +4,15 @@ $('.slider').slick({
     dots:true,
     variableWidth: true,
     speed:1000,
-    infinite:false    
+    infinite: false,
+    responsive: [
+        {
+            breakpoint: 375,
+            settings: {
+                variableWidth: false,
+                slidesToShow: 1,
+            }
+        },
+    ]
 });
 })

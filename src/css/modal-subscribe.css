@@ -10,15 +10,17 @@
     background-image: url(../img/modal-hero/bar-chocolate-mob-1.jpg);
     background-repeat: no-repeat;
     background-position: top 0 left 0;
+    background-size: 311px 169px;
     
 }
+
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .modal-subscribe{
-        background-image: url(../img/modal-hero/bar-chocolate-mob-2.jpg);
-    }
+.modal-subscribe{
+    background-image: url(../img/modal-hero/bar-chocolate-mob-2.jpg);
+}
 }
 .modal-subscribe-close {
     display: flex;
@@ -26,8 +28,8 @@
     justify-content: center;
     align-items: center;
     margin-left: auto;
-    margin-top: 21px;
-    margin-right: 20px;
+    margin-top: 15px;
+    margin-right: 14px;
     width: 24px;
     height: 24px;
     background-color: transparent;
@@ -83,7 +85,7 @@
 }
 .modal-subscribe-input{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.22;
     letter-spacing: -0.02em;
     width: 112px;
@@ -102,6 +104,7 @@
     width: 538px;
     height: 412px;
     background-image: url(../img/modal-hero/bar-chocolate-tab-desk-1.jpg);
+    background-size: 538px 196px;
 }
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
