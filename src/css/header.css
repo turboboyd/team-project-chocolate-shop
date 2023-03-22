@@ -123,7 +123,7 @@
   stroke: var(--accent-color);
 }
 
-.header-menu-nav {
+.header-menu-wrap {
   padding-left: 50px;
   margin-bottom: 24px;
 }
@@ -217,7 +217,7 @@
     padding-bottom: 24px;
   }
 
-  .header-menu-nav {
+  .header-menu-wrap {
     padding-left: 85px;
   }
 
@@ -340,7 +340,7 @@
     stroke: var(--accent-color);
   }
 
-  .header-menu-nav,
+  .header-menu-wrap,
   .header-menu-open-btn {
     display: none;
   }
