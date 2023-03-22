@@ -47,6 +47,10 @@
   width: 22px;
   height: 22px;
 }
+.footer-link:hover .footer-icon {
+  transform: rotateY(720deg);
+  transition: transform 800ms ease-in-out;
+}
 .test-1 {
   display: flex;
   flex-direction: column;
