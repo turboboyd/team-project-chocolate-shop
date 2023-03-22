@@ -211,14 +211,13 @@
       />
       <label class="buynow-label" for="phone">Phone number</label>
       <input
-        class="input-modal phone-input"
         type="tel"
-        name="phone"
-        id="phone"
+        class="input-modal phone-input"
+        name="tel-review"
         placeholder="Phone number"
-        required
-        pattern="^\[0-9]{9}$"
+        pattern="^\+[0-9]{12}$"
         title="Number of digits should not be 12"
+        required
       />
       <label class="buynow-label" for="card">Card number</label>
       <div class="input-buynow-wrap">
@@ -229,7 +228,7 @@
           id="card"
           placeholder="Enter card"
           required
-          pattern="^\[0-9]{16}$"
+          pattern="[0-9]{16}$"
         />
         <svg class="buynow-mcard" width="32" height="21">
           <use href="./img/icons.svg#icon-master-card"></use>

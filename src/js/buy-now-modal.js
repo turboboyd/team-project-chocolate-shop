@@ -16,8 +16,7 @@ form.addEventListener('input', e => {
       form.elements[1].value !== '' &&
       form.elements[2].value !== '' &&
       form.elements[3].value !== '' &&
-      form.elements[4].value !== '' &&
-      form.elements[5].value !== ''
+      form.elements[4].value !== ''
     ) {
       //прослушивание события сабмит: закрытие модалки buynow и открыие модалки modal-feedback
       form.addEventListener('submit', e => {
