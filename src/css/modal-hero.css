@@ -10,6 +10,8 @@
     border-radius: 15px;
     background-repeat: no-repeat;
     background-position: bottom 0 left 0;
+    background-size: 296px;
+        
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -24,6 +26,7 @@
 .modal-hero-title {
     margin-top: 42px;
     margin-left: 68px;
+    margin-right: 24px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -34,7 +37,8 @@
 .modal-hero-text {
     margin-top: 8px;
     margin-left: 68px;
-    width: 219px;
+    margin-right: 24px;
+    width: 229px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -79,6 +83,7 @@
     height: 350px;
     background: var(--accent-color);
     background-image: url(../img/modal-hero/mod-chocolate-mob-1.png);
+    background-size: 294px;
     border-radius: 15px;
     background-repeat: no-repeat;
     background-position: bottom 0 left 0;
@@ -120,7 +125,8 @@
 
 .modal-feedback-title {
     margin-top: 42px;
-    margin-left: 58px;
+    margin-left: 68px;
+    margin-right: 24px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -131,7 +137,8 @@
 
 .modal-feedback-text {
     margin-top: 8px;
-    margin-left: 58px;
+    margin-left: 68px;
+    margin-right: 24px;
     width: 219px;
     font-style: normal;
     font-weight: 400;
@@ -143,9 +150,9 @@
 @media screen and (min-width: 768px){
     .modal-hero{
         width: 516px;
-        height: 414px;
+        height: 414px;        
         background-image: url(../img/modal-hero/modal-chocolate-tab-desk-1.png);
-    }
+        }
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),

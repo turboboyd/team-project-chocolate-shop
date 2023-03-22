@@ -174,7 +174,7 @@
         <button class="products-btn" type="button">300 g</button>
       </li>
     </ul>
-    <form class="buynow-form">
+    <form class="buynow-form" name="buynow">
       <label class="buynow-label" for="nameperson">Personal information</label>
       <div class="buynow-name">
         <input
@@ -199,31 +199,27 @@
         />
       </div>
       <label class="buynow-label" for="email">Email</label>
-      <div>
-        <input
-          class="input-modal"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-          required
-          pattern=".{10,40}"
-          title="The number of characters should not be less than 10 and should not exceed 40"
-        />
-      </div>
+      <input
+        class="input-modal"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+        pattern=".{10,40}"
+        title="The number of characters should not be less than 10 and should not exceed 40"
+      />
       <label class="buynow-label" for="phone">Phone number</label>
-      <div>
-        <input
-          class="input-modal phone-input"
-          type="tel"
-          name="phone"
-          id="phone"
-          placeholder="Phone number"
-          required
-          pattern="^\+[0-9]{12}$"
-          title="Number of digits should not be 12"
-        />
-      </div>
+      <input
+        class="input-modal phone-input"
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Phone number"
+        required
+        pattern="^\[0-9]{9}$"
+        title="Number of digits should not be 12"
+      />
       <label class="buynow-label" for="card">Card number</label>
       <div class="input-buynow-wrap">
         <input
@@ -233,31 +229,24 @@
           id="card"
           placeholder="Enter card"
           required
-          pattern="{.16,16}"
+          pattern="^\[0-9]{16}$"
         />
         <svg class="buynow-mcard" width="32" height="21">
           <use href="./img/icons.svg#icon-master-card"></use>
         </svg>
       </div>
       <label class="buynow-label" for="com">Comment</label>
-      <div>
-        <textarea
-          class="input-modal buynow-comment"
-          name="comment"
-          id="com"
-          placeholder="Enter text"
-          required
-          pattern="^[a-zA-Z]{5,500}"
-          title="The number of characters should not be less than 5 and should not exceed 500"
-        ></textarea>
-      </div>
-      <button
-        class="button buynow-submit js-open-modal js-modal-close"
-        type="submit"
-        data-modal="modal-hero"
-      >
-        Submit
-      </button>
+      <textarea
+        class="input-modal buynow-comment"
+        name="comment"
+        id="com"
+        placeholder="Enter text"
+        required
+        minlength="4"
+        maxlength="500"
+        title="The number of characters should not be less than 5 and should not exceed 500"
+      ></textarea>
+      <button class="button buynow-submit" type="submit">Submit</button>
     </form>
   </div>
 </div>
