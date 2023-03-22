@@ -20,7 +20,7 @@
     <!--Світлана додала лінк на анімацію-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <script type="module" crossorigin src="/team-project-chocolate-shop/assets/index-8538c3b5.js"></script>
+    <script type="module" crossorigin src="/team-project-chocolate-shop/assets/index-87001fad.js"></script>
     <link rel="stylesheet" href="/team-project-chocolate-shop/assets/index-3b5959c8.css">
   </head>
   <body>
@@ -1227,14 +1227,13 @@
       />
       <label class="buynow-label" for="phone">Phone number</label>
       <input
-        class="input-modal phone-input"
         type="tel"
-        name="phone"
-        id="phone"
+        class="input-modal phone-input"
+        name="tel-review"
         placeholder="Phone number"
-        required
-        pattern="^\[0-9]{9}$"
+        pattern="^\+[0-9]{12}$"
         title="Number of digits should not be 12"
+        required
       />
       <label class="buynow-label" for="card">Card number</label>
       <div class="input-buynow-wrap">
@@ -1245,7 +1244,7 @@
           id="card"
           placeholder="Enter card"
           required
-          pattern="^\[0-9]{16}$"
+          pattern="[0-9]{16}$"
         />
         <svg class="buynow-mcard" width="32" height="21">
           <use href="/team-project-chocolate-shop/assets/icons-618f7dbf.svg#icon-master-card"></use>
