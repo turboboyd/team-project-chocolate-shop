@@ -4,7 +4,7 @@ $('.slider').slick({
     dots:true,
     variableWidth: true,
     speed:1000,
-    infinite: false,
+    infinite: true,
     responsive: [
         {
             breakpoint: 375,
