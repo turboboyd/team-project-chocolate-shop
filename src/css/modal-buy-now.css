@@ -182,14 +182,21 @@
     line-height: calc(18 / 14);
   }
 }
-
-.products-btn{
-  transition:color var(transition), border-color var(transition), background-color var(transition), box-shadow var(transition);
+.buynow-item{
+  box-shadow: 0 1px 6px var(--btn-shadow1);
 }
-.products-btn:hover{
+.products-btn{
+  transition:color var(transition), border-color var(transition), background-color var(transition);
+  box-shadow: 0 1px 6px var(--btn-shadow1),
+  0 1px 1px var(--btn-shadow2), 0 2px 1px var(--btn-shadow1);
+}
+
+.products-btn:is(:focus,:active){
 color: var(--accent-color);
 border-color: transparent;
 background-color: var(--light-modal-color);
-box-shadow: 0 1px 6px var(--btn-shadow1),
-  0 1px 1px var(--btn-shadow2), 0 2px 1px var(--btn-shadow1);
 }
+.products-btn:hover{
+  color: var(--accent-color);
+  border-color: transparent;
+  }
