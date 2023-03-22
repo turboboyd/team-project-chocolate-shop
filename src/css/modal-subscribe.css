@@ -1,137 +1,130 @@
 .modal-subscribe {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 311px;
-    height: 350px;
-    background: #FAFAFA;
-    border-radius: 15px;  
-    background-image: url(../img/modal-hero/bar-chocolate-mob-1.jpg);
-    background-repeat: no-repeat;
-    background-position: top 0 left 0;
-    background-size: 311px 169px;
-    
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 311px;
+  height: 350px;
+  background: #fafafa;
+  border-radius: 15px;
+  background-image: url(../img/modal-hero/bar-chocolate-mob-1.jpg);
+  background-repeat: no-repeat;
+  background-position: top 0 left 0;
+  background-size: 311px 169px;
 }
 
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.modal-subscribe{
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .modal-subscribe {
     background-image: url(../img/modal-hero/bar-chocolate-mob-2.jpg);
-}
+  }
 }
 .modal-subscribe-close {
-    display: flex;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-top: 15px;
-    margin-right: 14px;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 0;
+}
+.modal-subscribe-close-icon {
+  stroke: #ffffff;
+}
+.modal-subscribe-title {
+  margin-top: 201px;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  width: 263px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.accent {
+  color: var(--accent-color);
+}
+.modal-subscribe-wrap {
+  display: flex;
+  align-items: center;
+  width: 263px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 32px;
+}
+.modal-subscribe-but {
+  width: 100px;
+  font-size: 14px;
+  line-height: 1.21;
+  border-radius: 100px;
+  border: transparent;
+  font-weight: 600;
+  padding: 14px 22px;
+  height: 45px;
+  background-color: var(--accent-color);
+  color: var(--light-font-color);
+  margin-left: auto;
 
-}
-.modal-subscribe-close-icon{
-    stroke: #FFFFFF;
-}
-.modal-subscribe-title{
-    margin-top: 162px;
-    margin-bottom: 24px;
-    margin-left: 24px;
-    width: 263px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-}
-.accent{
-    color: var(--accent-color);
-}
-.modal-subscribe-wrap{
-    display: flex;
-    align-items: center; 
-    width: 263px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 100px;
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-bottom: 32px;
-}
-.modal-subscribe-but{
-    width: 100px;
-    font-size: 14px;
-    line-height: 1.21;
-    border-radius: 100px;
-    border: transparent;
-    font-weight: 600;
-    padding: 14px 22px;
-    height: 45px;
-    background-color: var(--accent-color);
-    color: var(--light-font-color);
-    margin-left: auto;
-
-    transition-property: background-color, color;
-    transition: var(--transition);
+  transition-property: background-color, color;
+  transition: var(--transition);
 }
 
 .modal-subscribe-but:is(:hover, :focus) {
-    background-color: var(--light-modal-color);
-    color: var(--accent-color);
+  background-color: var(--light-modal-color);
+  color: var(--accent-color);
 }
-.modal-subscribe-input{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.22;
-    letter-spacing: -0.02em;
-    width: 112px;
-    margin-left: 18px;
-    margin-top: 14px;
-    margin-bottom: 14px;
-    margin-right: 33px;
-    padding: 0;
-    border: 0;
-    color: rgba(64, 64, 64, 0.3);
+.modal-subscribe-input {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  width: 112px;
+  margin-left: 18px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-right: 33px;
+  padding: 0;
+  border: 0;
+  color: rgba(64, 64, 64, 0.3);
 }
 /* MEDIA 768 */
 
-@media screen and (min-width: 768px){
-.modal-subscribe {
+@media screen and (min-width: 768px) {
+  .modal-subscribe {
     width: 538px;
     height: 412px;
     background-image: url(../img/modal-hero/bar-chocolate-tab-desk-1.jpg);
     background-size: 538px 196px;
-}
-@media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .modal-subscribe{
-        background-image: url(../img/modal-hero/bar-chocolate-tab-desk-2.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modal-subscribe {
+      background-image: url(../img/modal-hero/bar-chocolate-tab-desk-2.jpg);
     }
-}
+  }
 
-.modal-subscribe-title {
-    margin-top: 184px;
+  .modal-subscribe-title {
+    margin-top: 236px;
     margin-bottom: 28px;
     margin-left: 40px;
     width: 310px;
     font-size: 24px;
     line-height: 1.17;
-}
-.modal-subscribe-wrap {
+  }
+  .modal-subscribe-wrap {
     width: 458px;
     margin-left: 40px;
     margin-bottom: 40px;
     margin-right: 0;
-    border:none;
-}
+    border: none;
+  }
 
-.modal-subscribe-input {
+  .modal-subscribe-input {
     width: 313px;
     margin: 0;
     padding-left: 24px;
@@ -140,11 +133,11 @@
     padding-bottom: 15px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 30px;
-    background:#FAFAFA;
+    background: #fafafa;
     font-size: 18px;
     line-height: 1.22;
-}
-.modal-subscribe-but {
+  }
+  .modal-subscribe-but {
     width: 137px;
     font-size: 14px;
     line-height: 1.21;
@@ -156,12 +149,10 @@
     background-color: var(--accent-color);
     color: var(--light-font-color);
     margin-left: 8px;
-    
-}
-.modal-subscribe-close {
-    margin-top: 24px;
-    margin-right: 24px;
-    width: 28px;
-    height: 28px;
-}
+  }
+  .modal-subscribe-close {
+  position: absolute;
+  top: 24px;
+  right: 24px
+  ;}
 }

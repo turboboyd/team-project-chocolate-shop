@@ -35,6 +35,8 @@
   margin-bottom: 18px;
 }
 
+/*---------PHONE-COD-------- */
+
 .iti--separate-dial-code .iti__selected-flag {
   background-color: inherit;
   display: flex;
@@ -59,6 +61,8 @@
   width: 100%;
   font-weight: 500;
 }
+
+/*---------PHONE-COD-------- */
 
 .modal-review-text-input {
   font-size: 14px;
@@ -87,6 +91,8 @@
     overflow: auto;
   }
 }
+
+/* ------TABLET------ */
 
 @media screen and (min-width: 768px) {
   .modal-review {

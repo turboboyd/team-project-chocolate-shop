@@ -70,6 +70,10 @@
   border-color: #cc0000;
 }
 
+.iti--separate-dial-code .iti__selected-dial-code{
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .icon-close-modal {
     width: 28px;
