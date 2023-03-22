@@ -3,7 +3,8 @@ $('.slider').slick({
     arrows:false,
     dots:true,
     variableWidth: true,
-    speed:1000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     infinite: true,
     responsive: [
         {
